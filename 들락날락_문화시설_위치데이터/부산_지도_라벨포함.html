@@ -1,0 +1,3676 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c27cd6eb737c3820afcd9b15fb2a3b1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            bottom: 50px; left: 50px; width: 150px; height: 70px; 
+            background-color: white; z-index:9999; font-size:14px;
+            border:2px solid grey; padding: 10px;">
+<b>범례</b><br>
+<svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="blue" /></svg> 들락날락<br>
+<svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="red" /></svg> 문화시설
+
+</div>
+    
+            <div class="folium-map" id="map_c27cd6eb737c3820afcd9b15fb2a3b1f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c27cd6eb737c3820afcd9b15fb2a3b1f = L.map(
+                "map_c27cd6eb737c3820afcd9b15fb2a3b1f",
+                {
+                    center: [35.167828879441544, 129.06604067982204],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f81ae02b5987944a2bf296ed65f90f1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5f81ae02b5987944a2bf296ed65f90f1.addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+            var circle_6c441b0f5a050d8cb475991252d0353f = L.circle(
+                [35.219629, 129.099327],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_b9f7d3b9e31bd99963ef225c6129ded1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa2413c3d07845ba4d6891ee7ba8398a = $(`<div id="html_aa2413c3d07845ba4d6891ee7ba8398a" style="width: 100.0%; height: 100.0%;">부산광역시립서동도서관</div>`)[0];
+                popup_b9f7d3b9e31bd99963ef225c6129ded1.setContent(html_aa2413c3d07845ba4d6891ee7ba8398a);
+            
+        
+
+        circle_6c441b0f5a050d8cb475991252d0353f.bindPopup(popup_b9f7d3b9e31bd99963ef225c6129ded1)
+        ;
+
+        
+    
+    
+            var circle_4dc971b3365088abe35af89ddf0118e9 = L.circle(
+                [35.124796, 129.040489],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_60653566d058dff37736703eb059f378 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0179ddce7d14aac4c706d1817846683b = $(`<div id="html_0179ddce7d14aac4c706d1817846683b" style="width: 100.0%; height: 100.0%;">부산광역시립중앙도서관수정분관</div>`)[0];
+                popup_60653566d058dff37736703eb059f378.setContent(html_0179ddce7d14aac4c706d1817846683b);
+            
+        
+
+        circle_4dc971b3365088abe35af89ddf0118e9.bindPopup(popup_60653566d058dff37736703eb059f378)
+        ;
+
+        
+    
+    
+            var circle_607dc4b7ab250c8fcbc0e7578ed8e915 = L.circle(
+                [35.200851, 129.106544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_850773532dc4f1a0c1409c3fdfc38081 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30479ecb0cfc0466d980d0b7a0dbfc38 = $(`<div id="html_30479ecb0cfc0466d980d0b7a0dbfc38" style="width: 100.0%; height: 100.0%;">부산광역시립명장도서관</div>`)[0];
+                popup_850773532dc4f1a0c1409c3fdfc38081.setContent(html_30479ecb0cfc0466d980d0b7a0dbfc38);
+            
+        
+
+        circle_607dc4b7ab250c8fcbc0e7578ed8e915.bindPopup(popup_850773532dc4f1a0c1409c3fdfc38081)
+        ;
+
+        
+    
+    
+            var circle_509b0f42d1836f263030b762396868d8 = L.circle(
+                [35.155903, 129.061953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4fa98e34ac27e9cb300eb16cb181e705 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a19c95950f0fe604dc69633168d8326f = $(`<div id="html_a19c95950f0fe604dc69633168d8326f" style="width: 100.0%; height: 100.0%;">부산광역시립부전도서관</div>`)[0];
+                popup_4fa98e34ac27e9cb300eb16cb181e705.setContent(html_a19c95950f0fe604dc69633168d8326f);
+            
+        
+
+        circle_509b0f42d1836f263030b762396868d8.bindPopup(popup_4fa98e34ac27e9cb300eb16cb181e705)
+        ;
+
+        
+    
+    
+            var circle_264f214c4a45edc134ff06d7917bb0f4 = L.circle(
+                [35.182806, 129.050142],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f8d8dec4fb48dbd4fc09fd86b5de25c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_371a79d21c21624bf77ebc9bcbc651b9 = $(`<div id="html_371a79d21c21624bf77ebc9bcbc651b9" style="width: 100.0%; height: 100.0%;">부산광역시립시민도서관</div>`)[0];
+                popup_f8d8dec4fb48dbd4fc09fd86b5de25c0.setContent(html_371a79d21c21624bf77ebc9bcbc651b9);
+            
+        
+
+        circle_264f214c4a45edc134ff06d7917bb0f4.bindPopup(popup_f8d8dec4fb48dbd4fc09fd86b5de25c0)
+        ;
+
+        
+    
+    
+            var circle_564e1a70a03d4be618c7cb1a2c9cd1e0 = L.circle(
+                [35.156745, 129.05232],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_61f8c365c869eb7c17f2241656fc02cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94e1edff7ad8f946affc6631637a1972 = $(`<div id="html_94e1edff7ad8f946affc6631637a1972" style="width: 100.0%; height: 100.0%;">부산영어도서관</div>`)[0];
+                popup_61f8c365c869eb7c17f2241656fc02cf.setContent(html_94e1edff7ad8f946affc6631637a1972);
+            
+        
+
+        circle_564e1a70a03d4be618c7cb1a2c9cd1e0.bindPopup(popup_61f8c365c869eb7c17f2241656fc02cf)
+        ;
+
+        
+    
+    
+            var circle_5c12a2abdf0db27b7953215693b78ca1 = L.circle(
+                [35.19398, 128.996008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_9737a49249a1390bae3ea7bc56871fe3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_046fcfab2a23a6cdd90d30c537057ea6 = $(`<div id="html_046fcfab2a23a6cdd90d30c537057ea6" style="width: 100.0%; height: 100.0%;">부산광역시립구포도서관</div>`)[0];
+                popup_9737a49249a1390bae3ea7bc56871fe3.setContent(html_046fcfab2a23a6cdd90d30c537057ea6);
+            
+        
+
+        circle_5c12a2abdf0db27b7953215693b78ca1.bindPopup(popup_9737a49249a1390bae3ea7bc56871fe3)
+        ;
+
+        
+    
+    
+            var circle_8dc90021d249dadf9bf408b6f620ec46 = L.circle(
+                [35.102893, 128.990917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_e9ee58aaf9d6cf9b1ef8b9f8c3be973c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f98e7d79966afb87ee5c639f7c8bf0da = $(`<div id="html_f98e7d79966afb87ee5c639f7c8bf0da" style="width: 100.0%; height: 100.0%;">부산광역시립사하도서관</div>`)[0];
+                popup_e9ee58aaf9d6cf9b1ef8b9f8c3be973c.setContent(html_f98e7d79966afb87ee5c639f7c8bf0da);
+            
+        
+
+        circle_8dc90021d249dadf9bf408b6f620ec46.bindPopup(popup_e9ee58aaf9d6cf9b1ef8b9f8c3be973c)
+        ;
+
+        
+    
+    
+            var circle_09fb5b772669b45a0ff92d3e18e95e85 = L.circle(
+                [35.121686, 129.016901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c25a66138d7cc45a2a0741de7490c04a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_095c88a53eee07acf10acd1fc671751a = $(`<div id="html_095c88a53eee07acf10acd1fc671751a" style="width: 100.0%; height: 100.0%;">부산광역시립구덕도서관</div>`)[0];
+                popup_c25a66138d7cc45a2a0741de7490c04a.setContent(html_095c88a53eee07acf10acd1fc671751a);
+            
+        
+
+        circle_09fb5b772669b45a0ff92d3e18e95e85.bindPopup(popup_c25a66138d7cc45a2a0741de7490c04a)
+        ;
+
+        
+    
+    
+            var circle_f233dd2b166ba52430cd52725afd44ef = L.circle(
+                [35.18595, 129.104003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_e9d1976c67e4bc217272b010a1af437d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf11921067768c101e75bdd2e8eae54b = $(`<div id="html_bf11921067768c101e75bdd2e8eae54b" style="width: 100.0%; height: 100.0%;">부산광역시립연산도서관</div>`)[0];
+                popup_e9d1976c67e4bc217272b010a1af437d.setContent(html_bf11921067768c101e75bdd2e8eae54b);
+            
+        
+
+        circle_f233dd2b166ba52430cd52725afd44ef.bindPopup(popup_e9d1976c67e4bc217272b010a1af437d)
+        ;
+
+        
+    
+    
+            var circle_e5fb98c63b77ef0cb8ba9329488fbdf3 = L.circle(
+                [35.11003, 129.026961],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_cc7f3f43d46874ee05bc7c433c656923 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd15a4b21d536b17ec067d8c594921bf = $(`<div id="html_fd15a4b21d536b17ec067d8c594921bf" style="width: 100.0%; height: 100.0%;">부산광역시립중앙도서관</div>`)[0];
+                popup_cc7f3f43d46874ee05bc7c433c656923.setContent(html_fd15a4b21d536b17ec067d8c594921bf);
+            
+        
+
+        circle_e5fb98c63b77ef0cb8ba9329488fbdf3.bindPopup(popup_cc7f3f43d46874ee05bc7c433c656923)
+        ;
+
+        
+    
+    
+            var circle_df5dc92082628db9d3567b18a9d1c9bc = L.circle(
+                [35.225061, 129.148325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_81eaf6abd7fff59bbf529f9f9c18983d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e3b7d595a4975769fb9b12dfac164cc = $(`<div id="html_8e3b7d595a4975769fb9b12dfac164cc" style="width: 100.0%; height: 100.0%;">부산광역시립반송도서관</div>`)[0];
+                popup_81eaf6abd7fff59bbf529f9f9c18983d.setContent(html_8e3b7d595a4975769fb9b12dfac164cc);
+            
+        
+
+        circle_df5dc92082628db9d3567b18a9d1c9bc.bindPopup(popup_81eaf6abd7fff59bbf529f9f9c18983d)
+        ;
+
+        
+    
+    
+            var circle_bcf06b88a2417f0962177a331cf78a59 = L.circle(
+                [35.17794, 129.168917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_481021a58277512a45440ff9e7df56f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8d367bf204a8983f6c830b3f9762481 = $(`<div id="html_e8d367bf204a8983f6c830b3f9762481" style="width: 100.0%; height: 100.0%;">부산광역시립해운대도서관</div>`)[0];
+                popup_481021a58277512a45440ff9e7df56f5.setContent(html_e8d367bf204a8983f6c830b3f9762481);
+            
+        
+
+        circle_bcf06b88a2417f0962177a331cf78a59.bindPopup(popup_481021a58277512a45440ff9e7df56f5)
+        ;
+
+        
+    
+    
+            var circle_a51170f3310f6ad0cea2f6c884000f76 = L.circle(
+                [35.179418, 129.159935],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_7d4bc42229af21a32e60e1c2a0b8a09f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39c3c33da79ac54c28a7a4d668b78e58 = $(`<div id="html_39c3c33da79ac54c28a7a4d668b78e58" style="width: 100.0%; height: 100.0%;">해운대도서관 우동분관</div>`)[0];
+                popup_7d4bc42229af21a32e60e1c2a0b8a09f.setContent(html_39c3c33da79ac54c28a7a4d668b78e58);
+            
+        
+
+        circle_a51170f3310f6ad0cea2f6c884000f76.bindPopup(popup_7d4bc42229af21a32e60e1c2a0b8a09f)
+        ;
+
+        
+    
+    
+            var circle_0bee0cac8ab013001668db44eecfbf21 = L.circle(
+                [35.200405, 129.07841],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_8f43ae05a905f22407933442c839f72b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e01fc6ec82ed76ee7222be72101614bc = $(`<div id="html_e01fc6ec82ed76ee7222be72101614bc" style="width: 100.0%; height: 100.0%;">꿈키어린이도서관</div>`)[0];
+                popup_8f43ae05a905f22407933442c839f72b.setContent(html_e01fc6ec82ed76ee7222be72101614bc);
+            
+        
+
+        circle_0bee0cac8ab013001668db44eecfbf21.bindPopup(popup_8f43ae05a905f22407933442c839f72b)
+        ;
+
+        
+    
+    
+            var circle_f353537d583b6908749693ec74a2ba32 = L.circle(
+                [35.243745, 129.020329],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_6682ded5c051312e4e0908786f9a0bf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29572a592c2a3f049f6854f7ac00502c = $(`<div id="html_29572a592c2a3f049f6854f7ac00502c" style="width: 100.0%; height: 100.0%;">맨발동무도서관</div>`)[0];
+                popup_6682ded5c051312e4e0908786f9a0bf8.setContent(html_29572a592c2a3f049f6854f7ac00502c);
+            
+        
+
+        circle_f353537d583b6908749693ec74a2ba32.bindPopup(popup_6682ded5c051312e4e0908786f9a0bf8)
+        ;
+
+        
+    
+    
+            var circle_5fb56f0eac4af6c33fe5fd16c9685a98 = L.circle(
+                [35.229922, 129.155649],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_65f6828d964b9a4ddc6ee04382c579a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7c15b6ac1a57092aee1720b91a53fb4 = $(`<div id="html_f7c15b6ac1a57092aee1720b91a53fb4" style="width: 100.0%; height: 100.0%;">느티나무도서관</div>`)[0];
+                popup_65f6828d964b9a4ddc6ee04382c579a8.setContent(html_f7c15b6ac1a57092aee1720b91a53fb4);
+            
+        
+
+        circle_5fb56f0eac4af6c33fe5fd16c9685a98.bindPopup(popup_65f6828d964b9a4ddc6ee04382c579a8)
+        ;
+
+        
+    
+    
+            var circle_8eb3e2de0f51010849457634fb5ef7b9 = L.circle(
+                [35.086177, 128.904768],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c932203a9a9f8026d5587def030b9770 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1409bd7cf5753e1c33329a8c89d1491 = $(`<div id="html_e1409bd7cf5753e1c33329a8c89d1491" style="width: 100.0%; height: 100.0%;">강서기적의도서관</div>`)[0];
+                popup_c932203a9a9f8026d5587def030b9770.setContent(html_e1409bd7cf5753e1c33329a8c89d1491);
+            
+        
+
+        circle_8eb3e2de0f51010849457634fb5ef7b9.bindPopup(popup_c932203a9a9f8026d5587def030b9770)
+        ;
+
+        
+    
+    
+            var circle_c180c0c23fa92d723c9accd668582146 = L.circle(
+                [35.180196, 128.95741],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_b075353b57d235669684d8cc11317409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44e8acbc5fa2daebb2d389ea6325c493 = $(`<div id="html_44e8acbc5fa2daebb2d389ea6325c493" style="width: 100.0%; height: 100.0%;">부산강서도서관</div>`)[0];
+                popup_b075353b57d235669684d8cc11317409.setContent(html_44e8acbc5fa2daebb2d389ea6325c493);
+            
+        
+
+        circle_c180c0c23fa92d723c9accd668582146.bindPopup(popup_b075353b57d235669684d8cc11317409)
+        ;
+
+        
+    
+    
+            var circle_9d3bfac5846f68911b8aa6fecab4dd96 = L.circle(
+                [35.150923, 128.831297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2a62a71efb91c1c7e8f0dbe9a23023f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9d9467dac65ea9059a6e4ee47657c9c = $(`<div id="html_a9d9467dac65ea9059a6e4ee47657c9c" style="width: 100.0%; height: 100.0%;">지사도서관</div>`)[0];
+                popup_2a62a71efb91c1c7e8f0dbe9a23023f7.setContent(html_a9d9467dac65ea9059a6e4ee47657c9c);
+            
+        
+
+        circle_9d3bfac5846f68911b8aa6fecab4dd96.bindPopup(popup_2a62a71efb91c1c7e8f0dbe9a23023f7)
+        ;
+
+        
+    
+    
+            var circle_88416ef696886db9e485fa6a440db6ca = L.circle(
+                [35.239005, 129.09393],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_6c84381a6b1f7e2eb9cc60fa95071b44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01b0770016be790146efad567dd15c63 = $(`<div id="html_01b0770016be790146efad567dd15c63" style="width: 100.0%; height: 100.0%;">금샘도서관</div>`)[0];
+                popup_6c84381a6b1f7e2eb9cc60fa95071b44.setContent(html_01b0770016be790146efad567dd15c63);
+            
+        
+
+        circle_88416ef696886db9e485fa6a440db6ca.bindPopup(popup_6c84381a6b1f7e2eb9cc60fa95071b44)
+        ;
+
+        
+    
+    
+            var circle_77a7bd7d38a33a8f01f17de3a11231e5 = L.circle(
+                [35.272718, 129.096198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_fd9eb4ab121ac8115becd716ff657717 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a607ca3f4b5e2ae638e7c760ab5c2981 = $(`<div id="html_a607ca3f4b5e2ae638e7c760ab5c2981" style="width: 100.0%; height: 100.0%;">금정도서관</div>`)[0];
+                popup_fd9eb4ab121ac8115becd716ff657717.setContent(html_a607ca3f4b5e2ae638e7c760ab5c2981);
+            
+        
+
+        circle_77a7bd7d38a33a8f01f17de3a11231e5.bindPopup(popup_fd9eb4ab121ac8115becd716ff657717)
+        ;
+
+        
+    
+    
+            var circle_edfc93f7f3272b896c03c31de33c207d = L.circle(
+                [35.23873, 129.168698],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ee85fa84bff86bfb0933cc923596dabc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5720e8cb77e9aae47f160bb1dd1f3dc5 = $(`<div id="html_5720e8cb77e9aae47f160bb1dd1f3dc5" style="width: 100.0%; height: 100.0%;">고촌어울림도서관</div>`)[0];
+                popup_ee85fa84bff86bfb0933cc923596dabc.setContent(html_5720e8cb77e9aae47f160bb1dd1f3dc5);
+            
+        
+
+        circle_edfc93f7f3272b896c03c31de33c207d.bindPopup(popup_ee85fa84bff86bfb0933cc923596dabc)
+        ;
+
+        
+    
+    
+            var circle_90f9729e7c30296240b7f10be0556be8 = L.circle(
+                [35.255222, 129.215527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_770000d54f973d7b728610638316baa7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c920fcb0dca4a4f5d82e5151d0d6e57b = $(`<div id="html_c920fcb0dca4a4f5d82e5151d0d6e57b" style="width: 100.0%; height: 100.0%;">교리도서관</div>`)[0];
+                popup_770000d54f973d7b728610638316baa7.setContent(html_c920fcb0dca4a4f5d82e5151d0d6e57b);
+            
+        
+
+        circle_90f9729e7c30296240b7f10be0556be8.bindPopup(popup_770000d54f973d7b728610638316baa7)
+        ;
+
+        
+    
+    
+            var circle_937cdbb27c2e799b365602c0d9f71521 = L.circle(
+                [35.249685, 129.217304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_573e2c315267a3f81de3de995e56ff7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_064478e6ea486a7b471cad4f3701387f = $(`<div id="html_064478e6ea486a7b471cad4f3701387f" style="width: 100.0%; height: 100.0%;">기장도서관</div>`)[0];
+                popup_573e2c315267a3f81de3de995e56ff7f.setContent(html_064478e6ea486a7b471cad4f3701387f);
+            
+        
+
+        circle_937cdbb27c2e799b365602c0d9f71521.bindPopup(popup_573e2c315267a3f81de3de995e56ff7f)
+        ;
+
+        
+    
+    
+            var circle_47cb2a5c68c1c2ae49914dc6e362d4e1 = L.circle(
+                [35.201849, 129.206184],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_7dc43d59eee25e1816b245975ec3c9b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af7776e628a49c9cde50e4b3166b7552 = $(`<div id="html_af7776e628a49c9cde50e4b3166b7552" style="width: 100.0%; height: 100.0%;">내리새라도서관</div>`)[0];
+                popup_7dc43d59eee25e1816b245975ec3c9b2.setContent(html_af7776e628a49c9cde50e4b3166b7552);
+            
+        
+
+        circle_47cb2a5c68c1c2ae49914dc6e362d4e1.bindPopup(popup_7dc43d59eee25e1816b245975ec3c9b2)
+        ;
+
+        
+    
+    
+            var circle_90d2eab499fa2c18635c2a034eb862fe = L.circle(
+                [35.240801, 129.210592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_fe666d7a56eee7d708cda83ac85d46cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e2b0dd45e68def2b218aba01faa6953 = $(`<div id="html_6e2b0dd45e68def2b218aba01faa6953" style="width: 100.0%; height: 100.0%;">대라다목적도서관</div>`)[0];
+                popup_fe666d7a56eee7d708cda83ac85d46cf.setContent(html_6e2b0dd45e68def2b218aba01faa6953);
+            
+        
+
+        circle_90d2eab499fa2c18635c2a034eb862fe.bindPopup(popup_fe666d7a56eee7d708cda83ac85d46cf)
+        ;
+
+        
+    
+    
+            var circle_8d331efe0c229a055ef578414549c8f2 = L.circle(
+                [35.325185, 129.181485],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c7477a9de4a5932939515a8dba57e858 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_132290af30d53d43666fb247ed4e54ce = $(`<div id="html_132290af30d53d43666fb247ed4e54ce" style="width: 100.0%; height: 100.0%;">정관도서관</div>`)[0];
+                popup_c7477a9de4a5932939515a8dba57e858.setContent(html_132290af30d53d43666fb247ed4e54ce);
+            
+        
+
+        circle_8d331efe0c229a055ef578414549c8f2.bindPopup(popup_c7477a9de4a5932939515a8dba57e858)
+        ;
+
+        
+    
+    
+            var circle_8f46bbc06e8910d24c85e861e2a144f6 = L.circle(
+                [35.323887, 129.177621],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c5829c63b51e435742b9eac81a49cb57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1be6999bc8e4984ae6282770984c1d6b = $(`<div id="html_1be6999bc8e4984ae6282770984c1d6b" style="width: 100.0%; height: 100.0%;">정관어린이도서관</div>`)[0];
+                popup_c5829c63b51e435742b9eac81a49cb57.setContent(html_1be6999bc8e4984ae6282770984c1d6b);
+            
+        
+
+        circle_8f46bbc06e8910d24c85e861e2a144f6.bindPopup(popup_c5829c63b51e435742b9eac81a49cb57)
+        ;
+
+        
+    
+    
+            var circle_545a7f55efc086da306e14aead801843 = L.circle(
+                [35.137697, 129.094568],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ae6b73eb81d0aac8ef91f93250aeaad2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d534a48329260493fa43f56e96a73a31 = $(`<div id="html_d534a48329260493fa43f56e96a73a31" style="width: 100.0%; height: 100.0%;">남구도서관</div>`)[0];
+                popup_ae6b73eb81d0aac8ef91f93250aeaad2.setContent(html_d534a48329260493fa43f56e96a73a31);
+            
+        
+
+        circle_545a7f55efc086da306e14aead801843.bindPopup(popup_ae6b73eb81d0aac8ef91f93250aeaad2)
+        ;
+
+        
+    
+    
+            var circle_d110b43332890d500064af5798d761ab = L.circle(
+                [35.132055, 129.11522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_a7fe7d38427af2facb4ba76489e75cab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_952b216d65d0ea709367835783cd96d7 = $(`<div id="html_952b216d65d0ea709367835783cd96d7" style="width: 100.0%; height: 100.0%;">부산광역시 남구 분포도서관</div>`)[0];
+                popup_a7fe7d38427af2facb4ba76489e75cab.setContent(html_952b216d65d0ea709367835783cd96d7);
+            
+        
+
+        circle_d110b43332890d500064af5798d761ab.bindPopup(popup_a7fe7d38427af2facb4ba76489e75cab)
+        ;
+
+        
+    
+    
+            var circle_06862678fbbb0e54a4d5077b702bbed5 = L.circle(
+                [35.138055, 129.052423],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2cb414e989ccbd8ef754a661e86fe861 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b7145e0c7b8ae2ed0d8c4eb72193bf8 = $(`<div id="html_6b7145e0c7b8ae2ed0d8c4eb72193bf8" style="width: 100.0%; height: 100.0%;">동구도서관</div>`)[0];
+                popup_2cb414e989ccbd8ef754a661e86fe861.setContent(html_6b7145e0c7b8ae2ed0d8c4eb72193bf8);
+            
+        
+
+        circle_06862678fbbb0e54a4d5077b702bbed5.bindPopup(popup_2cb414e989ccbd8ef754a661e86fe861)
+        ;
+
+        
+    
+    
+            var circle_b1f4b22a7419f019ce843317aa6c9706 = L.circle(
+                [35.134604, 129.042006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_26e3a79d6f8013c5a31fdf98b6a5c6bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad153cd7b9aadf2b9eadd93c1d149881 = $(`<div id="html_ad153cd7b9aadf2b9eadd93c1d149881" style="width: 100.0%; height: 100.0%;">동구어린이영어도서관</div>`)[0];
+                popup_26e3a79d6f8013c5a31fdf98b6a5c6bf.setContent(html_ad153cd7b9aadf2b9eadd93c1d149881);
+            
+        
+
+        circle_b1f4b22a7419f019ce843317aa6c9706.bindPopup(popup_26e3a79d6f8013c5a31fdf98b6a5c6bf)
+        ;
+
+        
+    
+    
+            var circle_d070eb9d2edbc0bf5d812d8ea6c6e3dc = L.circle(
+                [35.207086, 129.094804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_8191209c13928d67301fc6fc4465f942 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c73eca07918aaa2596dff728b7a6ccd0 = $(`<div id="html_c73eca07918aaa2596dff728b7a6ccd0" style="width: 100.0%; height: 100.0%;">동래읍성도서관</div>`)[0];
+                popup_8191209c13928d67301fc6fc4465f942.setContent(html_c73eca07918aaa2596dff728b7a6ccd0);
+            
+        
+
+        circle_d070eb9d2edbc0bf5d812d8ea6c6e3dc.bindPopup(popup_8191209c13928d67301fc6fc4465f942)
+        ;
+
+        
+    
+    
+            var circle_9ec4e76a34b00e0c6bd1309b0eca0912 = L.circle(
+                [35.196985, 129.107708],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4a0d83f9e38e7cb589ab872dd48fd7fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffb42346ca5c679db71d648e76736b27 = $(`<div id="html_ffb42346ca5c679db71d648e76736b27" style="width: 100.0%; height: 100.0%;">안락누리도서관</div>`)[0];
+                popup_4a0d83f9e38e7cb589ab872dd48fd7fa.setContent(html_ffb42346ca5c679db71d648e76736b27);
+            
+        
+
+        circle_9ec4e76a34b00e0c6bd1309b0eca0912.bindPopup(popup_4a0d83f9e38e7cb589ab872dd48fd7fa)
+        ;
+
+        
+    
+    
+            var circle_f0ae25dad2e53f39871bffa43e2645ab = L.circle(
+                [35.169015, 129.039643],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_a3f23abaa386776473bf1fbd64842ccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d6994cc033927b7f1d18247628993d = $(`<div id="html_85d6994cc033927b7f1d18247628993d" style="width: 100.0%; height: 100.0%;">부산진구어린이청소년도서관</div>`)[0];
+                popup_a3f23abaa386776473bf1fbd64842ccf.setContent(html_85d6994cc033927b7f1d18247628993d);
+            
+        
+
+        circle_f0ae25dad2e53f39871bffa43e2645ab.bindPopup(popup_a3f23abaa386776473bf1fbd64842ccf)
+        ;
+
+        
+    
+    
+            var circle_77613766a449e3c6968240e99a5d0dbb = L.circle(
+                [35.263234, 129.016719],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_3a573bd4ebe19579c86e0ea59f7fbf41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd8f54dd7e744712c7f49c43f383e13f = $(`<div id="html_cd8f54dd7e744712c7f49c43f383e13f" style="width: 100.0%; height: 100.0%;">금곡도서관</div>`)[0];
+                popup_3a573bd4ebe19579c86e0ea59f7fbf41.setContent(html_cd8f54dd7e744712c7f49c43f383e13f);
+            
+        
+
+        circle_77613766a449e3c6968240e99a5d0dbb.bindPopup(popup_3a573bd4ebe19579c86e0ea59f7fbf41)
+        ;
+
+        
+    
+    
+            var circle_a741b8d6c49d5b7b7a0468653450e80f = L.circle(
+                [35.207241, 129.037798],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2e7b4ea29551cfb60823518bdeefc02a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fc51e8a1d9acf15777c2a55794a0f5c = $(`<div id="html_9fc51e8a1d9acf15777c2a55794a0f5c" style="width: 100.0%; height: 100.0%;">만덕도서관</div>`)[0];
+                popup_2e7b4ea29551cfb60823518bdeefc02a.setContent(html_9fc51e8a1d9acf15777c2a55794a0f5c);
+            
+        
+
+        circle_a741b8d6c49d5b7b7a0468653450e80f.bindPopup(popup_2e7b4ea29551cfb60823518bdeefc02a)
+        ;
+
+        
+    
+    
+            var circle_229c658b216ef4bc6406578b3ace61dc = L.circle(
+                [35.232197, 129.009391],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_369dea56380ce231234d9d9a58b488ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86972f5ed7df9d7d7d6bdd510f311821 = $(`<div id="html_86972f5ed7df9d7d7d6bdd510f311821" style="width: 100.0%; height: 100.0%;">화명도서관</div>`)[0];
+                popup_369dea56380ce231234d9d9a58b488ee.setContent(html_86972f5ed7df9d7d7d6bdd510f311821);
+            
+        
+
+        circle_229c658b216ef4bc6406578b3ace61dc.bindPopup(popup_369dea56380ce231234d9d9a58b488ee)
+        ;
+
+        
+    
+    
+            var circle_fb9272376f49d962f65fe5113d0bb9af = L.circle(
+                [35.172719, 128.985289],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_394db1bc7e72f96ae5c3cda40b576797 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7ed516426a299d1995182f78f1d57cd = $(`<div id="html_f7ed516426a299d1995182f78f1d57cd" style="width: 100.0%; height: 100.0%;">부산도서관</div>`)[0];
+                popup_394db1bc7e72f96ae5c3cda40b576797.setContent(html_f7ed516426a299d1995182f78f1d57cd);
+            
+        
+
+        circle_fb9272376f49d962f65fe5113d0bb9af.bindPopup(popup_394db1bc7e72f96ae5c3cda40b576797)
+        ;
+
+        
+    
+    
+            var circle_7a981edeecc1742e6be7e15e02908d3e = L.circle(
+                [35.178113, 128.989813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_91ab62d6acd1836e9320bf03e65594dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6975c1b573212732595c6dcbdbdd971 = $(`<div id="html_d6975c1b573212732595c6dcbdbdd971" style="width: 100.0%; height: 100.0%;">사상도서관</div>`)[0];
+                popup_91ab62d6acd1836e9320bf03e65594dd.setContent(html_d6975c1b573212732595c6dcbdbdd971);
+            
+        
+
+        circle_7a981edeecc1742e6be7e15e02908d3e.bindPopup(popup_91ab62d6acd1836e9320bf03e65594dd)
+        ;
+
+        
+    
+    
+            var circle_422665b90441fe6b8833346a27bc1a88 = L.circle(
+                [35.050427, 128.9647],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_834e3c5fcb993fac8c66bd29a2cf9727 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee91446010293c3d371c2b3eec02e5e7 = $(`<div id="html_ee91446010293c3d371c2b3eec02e5e7" style="width: 100.0%; height: 100.0%;">다대도서관</div>`)[0];
+                popup_834e3c5fcb993fac8c66bd29a2cf9727.setContent(html_ee91446010293c3d371c2b3eec02e5e7);
+            
+        
+
+        circle_422665b90441fe6b8833346a27bc1a88.bindPopup(popup_834e3c5fcb993fac8c66bd29a2cf9727)
+        ;
+
+        
+    
+    
+            var circle_02f563a38aa13597d2a00dca07cee987 = L.circle(
+                [35.173421, 129.104837],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_9ca67d29b0fe6a0cc7e0cbc27c11722f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2b73976725f5be4d65da5d9603b2c89 = $(`<div id="html_c2b73976725f5be4d65da5d9603b2c89" style="width: 100.0%; height: 100.0%;">망미도서관</div>`)[0];
+                popup_9ca67d29b0fe6a0cc7e0cbc27c11722f.setContent(html_c2b73976725f5be4d65da5d9603b2c89);
+            
+        
+
+        circle_02f563a38aa13597d2a00dca07cee987.bindPopup(popup_9ca67d29b0fe6a0cc7e0cbc27c11722f)
+        ;
+
+        
+    
+    
+            var circle_87a15555dc7d1faee1bb86260a165df4 = L.circle(
+                [35.144304, 129.105235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2be0433fec31946408e3a13ade2150e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd58dc8d43252179d92143935c9dfd4c = $(`<div id="html_dd58dc8d43252179d92143935c9dfd4c" style="width: 100.0%; height: 100.0%;">수영구도서관</div>`)[0];
+                popup_2be0433fec31946408e3a13ade2150e7.setContent(html_dd58dc8d43252179d92143935c9dfd4c);
+            
+        
+
+        circle_87a15555dc7d1faee1bb86260a165df4.bindPopup(popup_2be0433fec31946408e3a13ade2150e7)
+        ;
+
+        
+    
+    
+            var circle_fbbe91b1c684ed158f3d1cf007407c25 = L.circle(
+                [35.159754, 129.104983],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_264ea31b735866f2333feeba56ebc63e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5160190eed4dabf1814711ae3f7e78e6 = $(`<div id="html_5160190eed4dabf1814711ae3f7e78e6" style="width: 100.0%; height: 100.0%;">수영구어린이도서관</div>`)[0];
+                popup_264ea31b735866f2333feeba56ebc63e.setContent(html_5160190eed4dabf1814711ae3f7e78e6);
+            
+        
+
+        circle_fbbe91b1c684ed158f3d1cf007407c25.bindPopup(popup_264ea31b735866f2333feeba56ebc63e)
+        ;
+
+        
+    
+    
+            var circle_a29e77840dfa43d980fc18707cb7876c = L.circle(
+                [35.18046, 129.075611],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_0ded4a71e436b460a484ad079d90fecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1e67cd2f71fff6ffe54ded0d04ecdf2 = $(`<div id="html_d1e67cd2f71fff6ffe54ded0d04ecdf2" style="width: 100.0%; height: 100.0%;">부산시청열린도서관</div>`)[0];
+                popup_0ded4a71e436b460a484ad079d90fecf.setContent(html_d1e67cd2f71fff6ffe54ded0d04ecdf2);
+            
+        
+
+        circle_a29e77840dfa43d980fc18707cb7876c.bindPopup(popup_0ded4a71e436b460a484ad079d90fecf)
+        ;
+
+        
+    
+    
+            var circle_18e2af6f3028f98033a404460e8f3f24 = L.circle(
+                [35.174137, 129.082969],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_6f3736c1e148d8173afb130a387d08c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a81b918df73b0a7b1181fbe04c22aaca = $(`<div id="html_a81b918df73b0a7b1181fbe04c22aaca" style="width: 100.0%; height: 100.0%;">연제도서관</div>`)[0];
+                popup_6f3736c1e148d8173afb130a387d08c8.setContent(html_a81b918df73b0a7b1181fbe04c22aaca);
+            
+        
+
+        circle_18e2af6f3028f98033a404460e8f3f24.bindPopup(popup_6f3736c1e148d8173afb130a387d08c8)
+        ;
+
+        
+    
+    
+            var circle_3728f14750df47b7dacf950be66b6f9b = L.circle(
+                [35.073864, 129.065562],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f8d7ffb48a040b7aa61e4f4f4a796305 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b72761a6764fff67f4cf782fc02e6bd = $(`<div id="html_8b72761a6764fff67f4cf782fc02e6bd" style="width: 100.0%; height: 100.0%;">영도도서관</div>`)[0];
+                popup_f8d7ffb48a040b7aa61e4f4f4a796305.setContent(html_8b72761a6764fff67f4cf782fc02e6bd);
+            
+        
+
+        circle_3728f14750df47b7dacf950be66b6f9b.bindPopup(popup_f8d7ffb48a040b7aa61e4f4f4a796305)
+        ;
+
+        
+    
+    
+            var circle_2b8932749ace302dbc76fdced84683dd = L.circle(
+                [35.088513, 129.038971],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ecb1816563fcfc6c061e31b8069156e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_821e53e4df3c2d9c87c3b7d1db603e75 = $(`<div id="html_821e53e4df3c2d9c87c3b7d1db603e75" style="width: 100.0%; height: 100.0%;">영도어린이영어도서관</div>`)[0];
+                popup_ecb1816563fcfc6c061e31b8069156e7.setContent(html_821e53e4df3c2d9c87c3b7d1db603e75);
+            
+        
+
+        circle_2b8932749ace302dbc76fdced84683dd.bindPopup(popup_ecb1816563fcfc6c061e31b8069156e7)
+        ;
+
+        
+    
+    
+            var circle_226f34c20545365a6500ecbf0f73d259 = L.circle(
+                [35.202026, 129.133808],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c99ef9b3dfe73edaff043ab7101258b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29ef6a0453c2733cf79e8270718abc27 = $(`<div id="html_29ef6a0453c2733cf79e8270718abc27" style="width: 100.0%; height: 100.0%;">반여도서관</div>`)[0];
+                popup_c99ef9b3dfe73edaff043ab7101258b0.setContent(html_29ef6a0453c2733cf79e8270718abc27);
+            
+        
+
+        circle_226f34c20545365a6500ecbf0f73d259.bindPopup(popup_c99ef9b3dfe73edaff043ab7101258b0)
+        ;
+
+        
+    
+    
+            var circle_53d73f205c620dd3f21c8e87fce786db = L.circle(
+                [35.189634, 129.118497],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_3cbd02ffe4e9b578bb3461ea44d630de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8510d17c288e6a55b6ea03e821cdda2 = $(`<div id="html_a8510d17c288e6a55b6ea03e821cdda2" style="width: 100.0%; height: 100.0%;">재송어린이도서관</div>`)[0];
+                popup_3cbd02ffe4e9b578bb3461ea44d630de.setContent(html_a8510d17c288e6a55b6ea03e821cdda2);
+            
+        
+
+        circle_53d73f205c620dd3f21c8e87fce786db.bindPopup(popup_3cbd02ffe4e9b578bb3461ea44d630de)
+        ;
+
+        
+    
+    
+            var circle_38ffe30573eab3f4efdaa187198b6c0e = L.circle(
+                [35.202192, 129.126302],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_505b9adfc63f2e3e06c80f9ebea75d8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_110d34b634d89211f8862cb31e507ce0 = $(`<div id="html_110d34b634d89211f8862cb31e507ce0" style="width: 100.0%; height: 100.0%;">해운대인문학도서관</div>`)[0];
+                popup_505b9adfc63f2e3e06c80f9ebea75d8f.setContent(html_110d34b634d89211f8862cb31e507ce0);
+            
+        
+
+        circle_38ffe30573eab3f4efdaa187198b6c0e.bindPopup(popup_505b9adfc63f2e3e06c80f9ebea75d8f)
+        ;
+
+        
+    
+    
+            var circle_5259356b2eb28cfcc942cf28a452fdaf = L.circle(
+                [35.124602, 129.092112],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_717aa97701db2ab86692d49150f19401 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c13c1921618397124f21973d903a545 = $(`<div id="html_5c13c1921618397124f21973d903a545" style="width: 100.0%; height: 100.0%;">국립일제강제동원역사관</div>`)[0];
+                popup_717aa97701db2ab86692d49150f19401.setContent(html_5c13c1921618397124f21973d903a545);
+            
+        
+
+        circle_5259356b2eb28cfcc942cf28a452fdaf.bindPopup(popup_717aa97701db2ab86692d49150f19401)
+        ;
+
+        
+    
+    
+            var circle_34133667d50a70aac36bff4ffb428b0f = L.circle(
+                [35.078709, 129.0802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_e502fab2501d42a561a4219a91fbefa6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d1e7e8b70381188091c6acb39f4f735 = $(`<div id="html_9d1e7e8b70381188091c6acb39f4f735" style="width: 100.0%; height: 100.0%;">국립해양박물관</div>`)[0];
+                popup_e502fab2501d42a561a4219a91fbefa6.setContent(html_9d1e7e8b70381188091c6acb39f4f735);
+            
+        
+
+        circle_34133667d50a70aac36bff4ffb428b0f.bindPopup(popup_e502fab2501d42a561a4219a91fbefa6)
+        ;
+
+        
+    
+    
+            var circle_9356aa76905fe5cd7896574c6a3ea9ea = L.circle(
+                [35.071232, 129.07979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_bf25ee039ac02beefd8d2b1f2532b5ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3c3f7c58e62ad4cad115ec635461719 = $(`<div id="html_b3c3f7c58e62ad4cad115ec635461719" style="width: 100.0%; height: 100.0%;">동삼동패총전시관</div>`)[0];
+                popup_bf25ee039ac02beefd8d2b1f2532b5ba.setContent(html_b3c3f7c58e62ad4cad115ec635461719);
+            
+        
+
+        circle_9356aa76905fe5cd7896574c6a3ea9ea.bindPopup(popup_bf25ee039ac02beefd8d2b1f2532b5ba)
+        ;
+
+        
+    
+    
+            var circle_59a4ac4f3259534115a7bff88439ce6d = L.circle(
+                [35.208731, 129.09121],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_44717d1b34d6c5ac4d8cda7c7b0ad183 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d880086c1f4045953179ce2e49043909 = $(`<div id="html_d880086c1f4045953179ce2e49043909" style="width: 100.0%; height: 100.0%;">복천박물관</div>`)[0];
+                popup_44717d1b34d6c5ac4d8cda7c7b0ad183.setContent(html_d880086c1f4045953179ce2e49043909);
+            
+        
+
+        circle_59a4ac4f3259534115a7bff88439ce6d.bindPopup(popup_44717d1b34d6c5ac4d8cda7c7b0ad183)
+        ;
+
+        
+    
+    
+            var circle_b37b8b36c2d7cf4dc19747a7fb2bfbbd = L.circle(
+                [35.102671, 129.03116],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_7b5396eb968705186875c8d2a62df2c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_015f01115089f3aa0075f9e76c50da32 = $(`<div id="html_015f01115089f3aa0075f9e76c50da32" style="width: 100.0%; height: 100.0%;">부산근현대역사관(휴관)</div>`)[0];
+                popup_7b5396eb968705186875c8d2a62df2c6.setContent(html_015f01115089f3aa0075f9e76c50da32);
+            
+        
+
+        circle_b37b8b36c2d7cf4dc19747a7fb2bfbbd.bindPopup(popup_7b5396eb968705186875c8d2a62df2c6)
+        ;
+
+        
+    
+    
+            var circle_4de61636a0433fa6b6b6ba3e1e7753e1 = L.circle(
+                [35.128932, 129.093898],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_61b22ad3e4604ae4e359683a35a87947 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdb07565e83de4d7e49b6cc9143ced63 = $(`<div id="html_bdb07565e83de4d7e49b6cc9143ced63" style="width: 100.0%; height: 100.0%;">부산광역시립박물관</div>`)[0];
+                popup_61b22ad3e4604ae4e359683a35a87947.setContent(html_bdb07565e83de4d7e49b6cc9143ced63);
+            
+        
+
+        circle_4de61636a0433fa6b6b6ba3e1e7753e1.bindPopup(popup_61b22ad3e4604ae4e359683a35a87947)
+        ;
+
+        
+    
+    
+            var circle_4bd2a3c9375af7b9b0327a4dd3d8060a = L.circle(
+                [35.170202, 129.059145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_0f3b6e4b987387747fbfd163f7972904 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0f97e4c14e84159e7c729e82dc951b2 = $(`<div id="html_b0f97e4c14e84159e7c729e82dc951b2" style="width: 100.0%; height: 100.0%;">부산시민공원역사관</div>`)[0];
+                popup_0f3b6e4b987387747fbfd163f7972904.setContent(html_b0f97e4c14e84159e7c729e82dc951b2);
+            
+        
+
+        circle_4bd2a3c9375af7b9b0327a4dd3d8060a.bindPopup(popup_0f3b6e4b987387747fbfd163f7972904)
+        ;
+
+        
+    
+    
+            var circle_4ed163a91c69bc644de7a671c15a1b6e = L.circle(
+                [35.233754, 129.008455],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4d90fbcc30578d0851f374727c52c102 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3bfd3c8100d68228994ccd81acc0d36 = $(`<div id="html_c3bfd3c8100d68228994ccd81acc0d36" style="width: 100.0%; height: 100.0%;">부산어촌민속관</div>`)[0];
+                popup_4d90fbcc30578d0851f374727c52c102.setContent(html_c3bfd3c8100d68228994ccd81acc0d36);
+            
+        
+
+        circle_4ed163a91c69bc644de7a671c15a1b6e.bindPopup(popup_4d90fbcc30578d0851f374727c52c102)
+        ;
+
+        
+    
+    
+            var circle_db6cbd04b7a5e10fbd5f20ab449cfec9 = L.circle(
+                [35.101729, 129.033559],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ad83f653d7a5083c014edb0a6a5db04b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f2a879827102f715dd0b5e10db9bb7c = $(`<div id="html_6f2a879827102f715dd0b5e10db9bb7c" style="width: 100.0%; height: 100.0%;">부산영화체험박물관</div>`)[0];
+                popup_ad83f653d7a5083c014edb0a6a5db04b.setContent(html_6f2a879827102f715dd0b5e10db9bb7c);
+            
+        
+
+        circle_db6cbd04b7a5e10fbd5f20ab449cfec9.bindPopup(popup_ad83f653d7a5083c014edb0a6a5db04b)
+        ;
+
+        
+    
+    
+            var circle_8ca7e4421431b93b8b7d4b31a705aef5 = L.circle(
+                [35.221849, 129.075579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_37ce1c24fbd52338e9c7622e7734b532 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe1a3da0133f97585e4fc4bbc951b4fc = $(`<div id="html_fe1a3da0133f97585e4fc4bbc951b4fc" style="width: 100.0%; height: 100.0%;">부산해양자연사박물관</div>`)[0];
+                popup_37ce1c24fbd52338e9c7622e7734b532.setContent(html_fe1a3da0133f97585e4fc4bbc951b4fc);
+            
+        
+
+        circle_8ca7e4421431b93b8b7d4b31a705aef5.bindPopup(popup_37ce1c24fbd52338e9c7622e7734b532)
+        ;
+
+        
+    
+    
+            var circle_4ae76313a4f4abc84d9dda914ec7c362 = L.circle(
+                [35.172026, 128.978727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_83261b9bed03cac87bcc48ce88b1e478 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53622db8dc20a4979b17fa233343f134 = $(`<div id="html_53622db8dc20a4979b17fa233343f134" style="width: 100.0%; height: 100.0%;">사상생활사박물관</div>`)[0];
+                popup_83261b9bed03cac87bcc48ce88b1e478.setContent(html_53622db8dc20a4979b17fa233343f134);
+            
+        
+
+        circle_4ae76313a4f4abc84d9dda914ec7c362.bindPopup(popup_83261b9bed03cac87bcc48ce88b1e478)
+        ;
+
+        
+    
+    
+            var circle_52eafbb40a693f11f9f7cf4841bd6b35 = L.circle(
+                [35.103536, 129.017402],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4017614ba036cf65c03807b0a59d426c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b983177980c76188ad19dd1d0c2239bf = $(`<div id="html_b983177980c76188ad19dd1d0c2239bf" style="width: 100.0%; height: 100.0%;">임시수도기념관</div>`)[0];
+                popup_4017614ba036cf65c03807b0a59d426c.setContent(html_b983177980c76188ad19dd1d0c2239bf);
+            
+        
+
+        circle_52eafbb40a693f11f9f7cf4841bd6b35.bindPopup(popup_4017614ba036cf65c03807b0a59d426c)
+        ;
+
+        
+    
+    
+            var circle_9365390528390fe99a448e13b0c16436 = L.circle(
+                [35.32685, 129.185053],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_d2143b895b34de066f1afd44d9fe0bb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_308e1994f00e44535b6c1168c1ffc1aa = $(`<div id="html_308e1994f00e44535b6c1168c1ffc1aa" style="width: 100.0%; height: 100.0%;">정관박물관</div>`)[0];
+                popup_d2143b895b34de066f1afd44d9fe0bb5.setContent(html_308e1994f00e44535b6c1168c1ffc1aa);
+            
+        
+
+        circle_9365390528390fe99a448e13b0c16436.bindPopup(popup_d2143b895b34de066f1afd44d9fe0bb5)
+        ;
+
+        
+    
+    
+            var circle_9679de61542d02fca31df88c15b9190a = L.circle(
+                [35.031356, 128.812678],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_de1e23369101144a7e424d651950e439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6b1e11240c37614c8808f2b0b712f7f = $(`<div id="html_a6b1e11240c37614c8808f2b0b712f7f" style="width: 100.0%; height: 100.0%;">록봉민속교육박물관(휴관)</div>`)[0];
+                popup_de1e23369101144a7e424d651950e439.setContent(html_a6b1e11240c37614c8808f2b0b712f7f);
+            
+        
+
+        circle_9679de61542d02fca31df88c15b9190a.bindPopup(popup_de1e23369101144a7e424d651950e439)
+        ;
+
+        
+    
+    
+            var circle_73ddb42ee82a61de54883da7cad592b3 = L.circle(
+                [35.284482, 129.069085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_520d7145f74c96239aa0463e2d09aaf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_820ba4803d225e2e01a37c56f41b2139 = $(`<div id="html_820ba4803d225e2e01a37c56f41b2139" style="width: 100.0%; height: 100.0%;">범어사 성보박물관(휴관)</div>`)[0];
+                popup_520d7145f74c96239aa0463e2d09aaf6.setContent(html_820ba4803d225e2e01a37c56f41b2139);
+            
+        
+
+        circle_73ddb42ee82a61de54883da7cad592b3.bindPopup(popup_520d7145f74c96239aa0463e2d09aaf6)
+        ;
+
+        
+    
+    
+            var circle_4f62e5d17fd000ee8551d38f0c4037ad = L.circle(
+                [35.278407, 129.074401],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_51afcff08726720699e8ea7ee8af5ba1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3501830eb107cba47b0c2eeab1282c45 = $(`<div id="html_3501830eb107cba47b0c2eeab1282c45" style="width: 100.0%; height: 100.0%;">범어사 성보박물관(성보관)</div>`)[0];
+                popup_51afcff08726720699e8ea7ee8af5ba1.setContent(html_3501830eb107cba47b0c2eeab1282c45);
+            
+        
+
+        circle_4f62e5d17fd000ee8551d38f0c4037ad.bindPopup(popup_51afcff08726720699e8ea7ee8af5ba1)
+        ;
+
+        
+    
+    
+            var circle_bf9aeed991cbe136b54fbbb08a909f76 = L.circle(
+                [35.155545, 129.060369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_d38c52870dfe95eee2c87ad24252a2d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9579aedf5c1488473620c4885c8a1371 = $(`<div id="html_9579aedf5c1488473620c4885c8a1371" style="width: 100.0%; height: 100.0%;">부산포민속박물관(휴관)</div>`)[0];
+                popup_d38c52870dfe95eee2c87ad24252a2d7.setContent(html_9579aedf5c1488473620c4885c8a1371);
+            
+        
+
+        circle_bf9aeed991cbe136b54fbbb08a909f76.bindPopup(popup_d38c52870dfe95eee2c87ad24252a2d7)
+        ;
+
+        
+    
+    
+            var circle_e1b42c20601b1778c1beaf26da3e8a77 = L.circle(
+                [35.175165, 129.182058],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_208ee90befde21cea0be364fa9506218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_711663ff10d8cc17e9779e3c7c68c34c = $(`<div id="html_711663ff10d8cc17e9779e3c7c68c34c" style="width: 100.0%; height: 100.0%;">아세안문화박물관</div>`)[0];
+                popup_208ee90befde21cea0be364fa9506218.setContent(html_711663ff10d8cc17e9779e3c7c68c34c);
+            
+        
+
+        circle_e1b42c20601b1778c1beaf26da3e8a77.bindPopup(popup_208ee90befde21cea0be364fa9506218)
+        ;
+
+        
+    
+    
+            var circle_d8bdcb29996aa39e599970e0fec86ed1 = L.circle(
+                [35.246105, 129.101579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_8801dc6ce2c0ca87449dbaf44a7a6b88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8acdc45844239eef8589e04067677c3c = $(`<div id="html_8acdc45844239eef8589e04067677c3c" style="width: 100.0%; height: 100.0%;">오륜대한국순교자박물관(휴관)</div>`)[0];
+                popup_8801dc6ce2c0ca87449dbaf44a7a6b88.setContent(html_8acdc45844239eef8589e04067677c3c);
+            
+        
+
+        circle_d8bdcb29996aa39e599970e0fec86ed1.bindPopup(popup_8801dc6ce2c0ca87449dbaf44a7a6b88)
+        ;
+
+        
+    
+    
+            var circle_43d7faad81c2f8c683cdd7031d1c57dd = L.circle(
+                [35.124702, 129.093288],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_6a4eef4a9f2fd7b5c695ab1d24a49280 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fea3c2cb80239ca976c2c1bb46e13bc6 = $(`<div id="html_fea3c2cb80239ca976c2c1bb46e13bc6" style="width: 100.0%; height: 100.0%;">유엔평화기념관</div>`)[0];
+                popup_6a4eef4a9f2fd7b5c695ab1d24a49280.setContent(html_fea3c2cb80239ca976c2c1bb46e13bc6);
+            
+        
+
+        circle_43d7faad81c2f8c683cdd7031d1c57dd.bindPopup(popup_6a4eef4a9f2fd7b5c695ab1d24a49280)
+        ;
+
+        
+    
+    
+            var circle_1329dc2dd90f7005b4fb5975f23395b6 = L.circle(
+                [35.148313, 129.065451],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5f3ca280c524445e0b175ef4d0eb5e77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cae77cd89483b61dcacb08cb200dbdef = $(`<div id="html_cae77cd89483b61dcacb08cb200dbdef" style="width: 100.0%; height: 100.0%;">증권박물관(부산관)</div>`)[0];
+                popup_5f3ca280c524445e0b175ef4d0eb5e77.setContent(html_cae77cd89483b61dcacb08cb200dbdef);
+            
+        
+
+        circle_1329dc2dd90f7005b4fb5975f23395b6.bindPopup(popup_5f3ca280c524445e0b175ef4d0eb5e77)
+        ;
+
+        
+    
+    
+            var circle_a8fb2a78c9f6b8ce8b9510febb8e4c50 = L.circle(
+                [35.147141, 129.065649],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_450a24bbc5339fd7472d878bc64582d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2e1df8d4609f654291f519ce4e66746 = $(`<div id="html_d2e1df8d4609f654291f519ce4e66746" style="width: 100.0%; height: 100.0%;">한국거래소 자본시장역사박물관</div>`)[0];
+                popup_450a24bbc5339fd7472d878bc64582d2.setContent(html_d2e1df8d4609f654291f519ce4e66746);
+            
+        
+
+        circle_a8fb2a78c9f6b8ce8b9510febb8e4c50.bindPopup(popup_450a24bbc5339fd7472d878bc64582d2)
+        ;
+
+        
+    
+    
+            var circle_24984d81d228f476b8a611349adade8e = L.circle(
+                [35.201779, 129.082414],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c0cf7cf0f0fba8e44b0ceb73d07825a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40c5d7140cf421f941647a700ad3ea85 = $(`<div id="html_40c5d7140cf421f941647a700ad3ea85" style="width: 100.0%; height: 100.0%;">한국기독교선교박물관</div>`)[0];
+                popup_c0cf7cf0f0fba8e44b0ceb73d07825a3.setContent(html_40c5d7140cf421f941647a700ad3ea85);
+            
+        
+
+        circle_24984d81d228f476b8a611349adade8e.bindPopup(popup_c0cf7cf0f0fba8e44b0ceb73d07825a3)
+        ;
+
+        
+    
+    
+            var circle_efbd5d5258d116e3e03b07820074814c = L.circle(
+                [35.103745, 129.019412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_eaeecf96851b65dbadce0ae0fb090227 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd18dd988620ea8b2c02e91ed9a2febe = $(`<div id="html_dd18dd988620ea8b2c02e91ed9a2febe" style="width: 100.0%; height: 100.0%;">동아대학교 박물관</div>`)[0];
+                popup_eaeecf96851b65dbadce0ae0fb090227.setContent(html_dd18dd988620ea8b2c02e91ed9a2febe);
+            
+        
+
+        circle_efbd5d5258d116e3e03b07820074814c.bindPopup(popup_eaeecf96851b65dbadce0ae0fb090227)
+        ;
+
+        
+    
+    
+            var circle_2c1d3734c4a8daffa40801bf15c3ba08 = L.circle(
+                [35.140803, 129.03422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2e26cf7f7bf99f1309c7c9b9aa7504cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9355590a6e0124b781904569296a6b1 = $(`<div id="html_c9355590a6e0124b781904569296a6b1" style="width: 100.0%; height: 100.0%;">동의대학교박물관</div>`)[0];
+                popup_2e26cf7f7bf99f1309c7c9b9aa7504cc.setContent(html_c9355590a6e0124b781904569296a6b1);
+            
+        
+
+        circle_2c1d3734c4a8daffa40801bf15c3ba08.bindPopup(popup_2e26cf7f7bf99f1309c7c9b9aa7504cc)
+        ;
+
+        
+    
+    
+            var circle_ab092ccef5c5ea02894f81caa4fcbb13 = L.circle(
+                [35.105258, 128.997383],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_bd07b2b26415d231d1fccf6cd2047964 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f2e05e04a990b69f82c1c4d067f4a8b = $(`<div id="html_5f2e05e04a990b69f82c1c4d067f4a8b" style="width: 100.0%; height: 100.0%;">부산보건대학교 석파박물관</div>`)[0];
+                popup_bd07b2b26415d231d1fccf6cd2047964.setContent(html_5f2e05e04a990b69f82c1c4d067f4a8b);
+            
+        
+
+        circle_ab092ccef5c5ea02894f81caa4fcbb13.bindPopup(popup_bd07b2b26415d231d1fccf6cd2047964)
+        ;
+
+        
+    
+    
+            var circle_2b31eaf164d4bb3b7b3a0e51d030c006 = L.circle(
+                [35.134926, 129.109531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4c363ac2cf2b5788048f3a71689c38ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70801d6a55ebed4c8b68da0e62c5680d = $(`<div id="html_70801d6a55ebed4c8b68da0e62c5680d" style="width: 100.0%; height: 100.0%;">부경대학교박물관</div>`)[0];
+                popup_4c363ac2cf2b5788048f3a71689c38ef.setContent(html_70801d6a55ebed4c8b68da0e62c5680d);
+            
+        
+
+        circle_2b31eaf164d4bb3b7b3a0e51d030c006.bindPopup(popup_4c363ac2cf2b5788048f3a71689c38ef)
+        ;
+
+        
+    
+    
+            var circle_65655a9c5dbab6700f0cfa2516e4023f = L.circle(
+                [35.194072, 129.004607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_25ceffa2def5a1e4bc3f7afe967914a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_515706ac6293518021c0fd48e71af3d2 = $(`<div id="html_515706ac6293518021c0fd48e71af3d2" style="width: 100.0%; height: 100.0%;">부산과학기술대학교 민속자료실 박물관(휴관)</div>`)[0];
+                popup_25ceffa2def5a1e4bc3f7afe967914a3.setContent(html_515706ac6293518021c0fd48e71af3d2);
+            
+        
+
+        circle_65655a9c5dbab6700f0cfa2516e4023f.bindPopup(popup_25ceffa2def5a1e4bc3f7afe967914a3)
+        ;
+
+        
+    
+    
+            var circle_2528ecff6f333fe2155b99834d162ada = L.circle(
+                [35.196239, 129.075451],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_1b52153d755e02f13ea78080ec2bf967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30776d0bceedc31ce6abf11512399f3a = $(`<div id="html_30776d0bceedc31ce6abf11512399f3a" style="width: 100.0%; height: 100.0%;">부산교육대학교 교육박물관(한새갤러리)</div>`)[0];
+                popup_1b52153d755e02f13ea78080ec2bf967.setContent(html_30776d0bceedc31ce6abf11512399f3a);
+            
+        
+
+        circle_2528ecff6f333fe2155b99834d162ada.bindPopup(popup_1b52153d755e02f13ea78080ec2bf967)
+        ;
+
+        
+    
+    
+            var circle_b4a48ac93da8e162886245ad3f9d8c08 = L.circle(
+                [35.230173, 129.080608],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f66275b94a71453a4d54604636f59c2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_864c70f48b6de5c3f800fff0705d4e56 = $(`<div id="html_864c70f48b6de5c3f800fff0705d4e56" style="width: 100.0%; height: 100.0%;">부산대학교박물관</div>`)[0];
+                popup_f66275b94a71453a4d54604636f59c2a.setContent(html_864c70f48b6de5c3f800fff0705d4e56);
+            
+        
+
+        circle_b4a48ac93da8e162886245ad3f9d8c08.bindPopup(popup_f66275b94a71453a4d54604636f59c2a)
+        ;
+
+        
+    
+    
+            var circle_b6c9785c6e721e85a05bdbb69b98ff6f = L.circle(
+                [35.168664, 129.071607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_fd9d25e00ca95053dba15dbcb3339ad8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f398d4b18acb3ad5bbf098cdeb68b466 = $(`<div id="html_f398d4b18acb3ad5bbf098cdeb68b466" style="width: 100.0%; height: 100.0%;">부산여자대학교 한국차박물관</div>`)[0];
+                popup_fd9d25e00ca95053dba15dbcb3339ad8.setContent(html_f398d4b18acb3ad5bbf098cdeb68b466);
+            
+        
+
+        circle_b6c9785c6e721e85a05bdbb69b98ff6f.bindPopup(popup_fd9d25e00ca95053dba15dbcb3339ad8)
+        ;
+
+        
+    
+    
+            var circle_2badacb281247ad0fcd7b56a9a3e90ad = L.circle(
+                [35.169233, 128.995285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_fcb89bc0f8208daa0becfbc96103baf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af4529a08f62fe8cd2da358a6c7c6571 = $(`<div id="html_af4529a08f62fe8cd2da358a6c7c6571" style="width: 100.0%; height: 100.0%;">신라대학교박물관</div>`)[0];
+                popup_fcb89bc0f8208daa0becfbc96103baf5.setContent(html_af4529a08f62fe8cd2da358a6c7c6571);
+            
+        
+
+        circle_2badacb281247ad0fcd7b56a9a3e90ad.bindPopup(popup_fcb89bc0f8208daa0becfbc96103baf5)
+        ;
+
+        
+    
+    
+            var circle_e4d850b3d25becb04694b9b859bb41c7 = L.circle(
+                [35.078077, 129.091069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5f06296c54f8c4be68e531db96b2447e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23760c649317f4aa00c3fb79f0d661a9 = $(`<div id="html_23760c649317f4aa00c3fb79f0d661a9" style="width: 100.0%; height: 100.0%;">한국해양대학교박물관</div>`)[0];
+                popup_5f06296c54f8c4be68e531db96b2447e.setContent(html_23760c649317f4aa00c3fb79f0d661a9);
+            
+        
+
+        circle_e4d850b3d25becb04694b9b859bb41c7.bindPopup(popup_5f06296c54f8c4be68e531db96b2447e)
+        ;
+
+        
+    
+    
+            var circle_c84892ce7e450d9c693e7847220e6474 = L.circle(
+                [35.166701, 129.136986],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2d1268bb05d5bd1177dbaa64d6f9ff6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70c3e7b55d4a47afe8f5603f2f6b4884 = $(`<div id="html_70c3e7b55d4a47afe8f5603f2f6b4884" style="width: 100.0%; height: 100.0%;">부산광역시립미술관</div>`)[0];
+                popup_2d1268bb05d5bd1177dbaa64d6f9ff6f.setContent(html_70c3e7b55d4a47afe8f5603f2f6b4884);
+            
+        
+
+        circle_c84892ce7e450d9c693e7847220e6474.bindPopup(popup_2d1268bb05d5bd1177dbaa64d6f9ff6f)
+        ;
+
+        
+    
+    
+            var circle_9a5856bdabbe0a4fa31c366013026f21 = L.circle(
+                [35.109351, 128.942991],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_3e1349b556879d055baeda3d4db7d3bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e60ace6091750fbaf55c781964901919 = $(`<div id="html_e60ace6091750fbaf55c781964901919" style="width: 100.0%; height: 100.0%;">부산현대미술관</div>`)[0];
+                popup_3e1349b556879d055baeda3d4db7d3bd.setContent(html_e60ace6091750fbaf55c781964901919);
+            
+        
+
+        circle_9a5856bdabbe0a4fa31c366013026f21.bindPopup(popup_3e1349b556879d055baeda3d4db7d3bd)
+        ;
+
+        
+    
+    
+            var circle_4ac29e6902015c668adfcd19504bbc31 = L.circle(
+                [35.228939, 129.076739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_62cab353d1f3a9f3779ce8049d549e96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfa630d5b88ce42054e85a6d053da1d9 = $(`<div id="html_bfa630d5b88ce42054e85a6d053da1d9" style="width: 100.0%; height: 100.0%;">디오티미술관</div>`)[0];
+                popup_62cab353d1f3a9f3779ce8049d549e96.setContent(html_bfa630d5b88ce42054e85a6d053da1d9);
+            
+        
+
+        circle_4ac29e6902015c668adfcd19504bbc31.bindPopup(popup_62cab353d1f3a9f3779ce8049d549e96)
+        ;
+
+        
+    
+    
+            var circle_33df64ad7e0fdb584c93396adf924ccf = L.circle(
+                [35.163305, 129.14124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4224c3ff4f7222a550ec6462f4e7b69f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05f255534b691ff2d124c1826ea866c8 = $(`<div id="html_05f255534b691ff2d124c1826ea866c8" style="width: 100.0%; height: 100.0%;">고은사진미술관</div>`)[0];
+                popup_4224c3ff4f7222a550ec6462f4e7b69f.setContent(html_05f255534b691ff2d124c1826ea866c8);
+            
+        
+
+        circle_33df64ad7e0fdb584c93396adf924ccf.bindPopup(popup_4224c3ff4f7222a550ec6462f4e7b69f)
+        ;
+
+        
+    
+    
+            var circle_4ec0e1fe94a7b4d1f3cdb13881ec8f8b = L.circle(
+                [35.252356, 129.05399],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_017b90a249f5268dc1b9028f8438217e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2597449cd9dd78c24ea958e26f1d7b90 = $(`<div id="html_2597449cd9dd78c24ea958e26f1d7b90" style="width: 100.0%; height: 100.0%;">킴스아트필드미술관</div>`)[0];
+                popup_017b90a249f5268dc1b9028f8438217e.setContent(html_2597449cd9dd78c24ea958e26f1d7b90);
+            
+        
+
+        circle_4ec0e1fe94a7b4d1f3cdb13881ec8f8b.bindPopup(popup_017b90a249f5268dc1b9028f8438217e)
+        ;
+
+        
+    
+    
+            var circle_f195e53cc8ebb3ca6bf150ee3af89046 = L.circle(
+                [35.108972, 129.037425],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_388fa7b7ef7716359ef962a1b9dff2fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_509abf466a0e9a943587ec2beda41212 = $(`<div id="html_509abf466a0e9a943587ec2beda41212" style="width: 100.0%; height: 100.0%;">한광미술관(휴관)</div>`)[0];
+                popup_388fa7b7ef7716359ef962a1b9dff2fa.setContent(html_509abf466a0e9a943587ec2beda41212);
+            
+        
+
+        circle_f195e53cc8ebb3ca6bf150ee3af89046.bindPopup(popup_388fa7b7ef7716359ef962a1b9dff2fa)
+        ;
+
+        
+    
+    
+            var circle_a55106ca9c6737a1f3629f33ee50d09f = L.circle(
+                [35.154285, 129.057284],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_feaaef98487702708ae474102721a745 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b8debeabf17e446e5bd3584004969c3 = $(`<div id="html_2b8debeabf17e446e5bd3584004969c3" style="width: 100.0%; height: 100.0%;">KT&G 상상마당 부산미술관</div>`)[0];
+                popup_feaaef98487702708ae474102721a745.setContent(html_2b8debeabf17e446e5bd3584004969c3);
+            
+        
+
+        circle_a55106ca9c6737a1f3629f33ee50d09f.bindPopup(popup_feaaef98487702708ae474102721a745)
+        ;
+
+        
+    
+    
+            var circle_16e3caf213bd06eebb84b77f619be992 = L.circle(
+                [35.137827, 129.096093],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_fbf66409cb1c60b9d5cacceb2bc6dbcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99887aae270f36ffc2b84b63e233687 = $(`<div id="html_a99887aae270f36ffc2b84b63e233687" style="width: 100.0%; height: 100.0%;">경성대학교미술관</div>`)[0];
+                popup_fbf66409cb1c60b9d5cacceb2bc6dbcb.setContent(html_a99887aae270f36ffc2b84b63e233687);
+            
+        
+
+        circle_16e3caf213bd06eebb84b77f619be992.bindPopup(popup_fbf66409cb1c60b9d5cacceb2bc6dbcb)
+        ;
+
+        
+    
+    
+            var circle_12001c78d30a96ddc093ffdc1f70bb5d = L.circle(
+                [35.103745, 129.019412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f0f9f7c64910dd20c0ecbe8dcee1511e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42a2cf29421ec8ac7e6ea92aa2521ea8 = $(`<div id="html_42a2cf29421ec8ac7e6ea92aa2521ea8" style="width: 100.0%; height: 100.0%;">동아대학교 석당미술관</div>`)[0];
+                popup_f0f9f7c64910dd20c0ecbe8dcee1511e.setContent(html_42a2cf29421ec8ac7e6ea92aa2521ea8);
+            
+        
+
+        circle_12001c78d30a96ddc093ffdc1f70bb5d.bindPopup(popup_f0f9f7c64910dd20c0ecbe8dcee1511e)
+        ;
+
+        
+    
+    
+            var circle_695448a5b7b223305a82d31afb08d300 = L.circle(
+                [35.105004, 129.034478],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_966561bae3a7c0f08f6d0c42aefae69a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14142eb528ac7772f5cc4aae6c9f22b7 = $(`<div id="html_14142eb528ac7772f5cc4aae6c9f22b7" style="width: 100.0%; height: 100.0%;">40계단문화관</div>`)[0];
+                popup_966561bae3a7c0f08f6d0c42aefae69a.setContent(html_14142eb528ac7772f5cc4aae6c9f22b7);
+            
+        
+
+        circle_695448a5b7b223305a82d31afb08d300.bindPopup(popup_966561bae3a7c0f08f6d0c42aefae69a)
+        ;
+
+        
+    
+    
+            var circle_f434d8582814f630aca2c8f9ddf58df2 = L.circle(
+                [35.114419, 129.017262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2104ed8f083c22013f255b4422cccfbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c906a21c1555e0667bad52903ccc5ea = $(`<div id="html_0c906a21c1555e0667bad52903ccc5ea" style="width: 100.0%; height: 100.0%;">동대신3동 생활문화센터</div>`)[0];
+                popup_2104ed8f083c22013f255b4422cccfbf.setContent(html_0c906a21c1555e0667bad52903ccc5ea);
+            
+        
+
+        circle_f434d8582814f630aca2c8f9ddf58df2.bindPopup(popup_2104ed8f083c22013f255b4422cccfbf)
+        ;
+
+        
+    
+    
+            var circle_40c33f803161f7af3dbbb8856a6aaff1 = L.circle(
+                [35.13942, 129.056037],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_7d2014c3b528853f97fa1d7840591a16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34259ddc7a517662937b308f43918e30 = $(`<div id="html_34259ddc7a517662937b308f43918e30" style="width: 100.0%; height: 100.0%;">범일생활문화센터</div>`)[0];
+                popup_7d2014c3b528853f97fa1d7840591a16.setContent(html_34259ddc7a517662937b308f43918e30);
+            
+        
+
+        circle_40c33f803161f7af3dbbb8856a6aaff1.bindPopup(popup_7d2014c3b528853f97fa1d7840591a16)
+        ;
+
+        
+    
+    
+            var circle_aae5d54ba52918e058be49e8a406e0eb = L.circle(
+                [35.130743, 129.054101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c1f87930a8b21dc3eb7c1429691fa372 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db2411ffa594e119ed625b0819d2ff66 = $(`<div id="html_db2411ffa594e119ed625b0819d2ff66" style="width: 100.0%; height: 100.0%;">매축지생활문화센터</div>`)[0];
+                popup_c1f87930a8b21dc3eb7c1429691fa372.setContent(html_db2411ffa594e119ed625b0819d2ff66);
+            
+        
+
+        circle_aae5d54ba52918e058be49e8a406e0eb.bindPopup(popup_c1f87930a8b21dc3eb7c1429691fa372)
+        ;
+
+        
+    
+    
+            var circle_9b214e8b9209251562e4a99fb3379117 = L.circle(
+                [35.116531, 129.038479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_e4615627c0a2ca8daf744fd59c80144c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d231629e89f67654fe83244555586745 = $(`<div id="html_d231629e89f67654fe83244555586745" style="width: 100.0%; height: 100.0%;">초량생활문화센터</div>`)[0];
+                popup_e4615627c0a2ca8daf744fd59c80144c.setContent(html_d231629e89f67654fe83244555586745);
+            
+        
+
+        circle_9b214e8b9209251562e4a99fb3379117.bindPopup(popup_e4615627c0a2ca8daf744fd59c80144c)
+        ;
+
+        
+    
+    
+            var circle_b8e34818af2f6a6f5ebd0690dd176aaa = L.circle(
+                [35.129997, 129.04262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_046c510c703c20f364ebda16d01e8fb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9350a0cc0435a3db341d63247a70c4e7 = $(`<div id="html_9350a0cc0435a3db341d63247a70c4e7" style="width: 100.0%; height: 100.0%;">수정생활문화센터</div>`)[0];
+                popup_046c510c703c20f364ebda16d01e8fb4.setContent(html_9350a0cc0435a3db341d63247a70c4e7);
+            
+        
+
+        circle_b8e34818af2f6a6f5ebd0690dd176aaa.bindPopup(popup_046c510c703c20f364ebda16d01e8fb4)
+        ;
+
+        
+    
+    
+            var circle_f8966bdca632aaee5a6c23f085da82cf = L.circle(
+                [35.136133, 129.0486],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_26c2a4bbab33daa188e5da4d24b1f84c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09b5ec0933a44459f9ae63d3c1f209b7 = $(`<div id="html_09b5ec0933a44459f9ae63d3c1f209b7" style="width: 100.0%; height: 100.0%;">좌천생활문화센터</div>`)[0];
+                popup_26c2a4bbab33daa188e5da4d24b1f84c.setContent(html_09b5ec0933a44459f9ae63d3c1f209b7);
+            
+        
+
+        circle_f8966bdca632aaee5a6c23f085da82cf.bindPopup(popup_26c2a4bbab33daa188e5da4d24b1f84c)
+        ;
+
+        
+    
+    
+            var circle_0bf2c1243bc44af17f754eea74130b7d = L.circle(
+                [35.09173, 129.034688],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5154d80de8a5dbd9214d076adc627cdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_918a71d088d54d4724f563a0cd5e6d27 = $(`<div id="html_918a71d088d54d4724f563a0cd5e6d27" style="width: 100.0%; height: 100.0%;">깡깡이 생활문화센터</div>`)[0];
+                popup_5154d80de8a5dbd9214d076adc627cdd.setContent(html_918a71d088d54d4724f563a0cd5e6d27);
+            
+        
+
+        circle_0bf2c1243bc44af17f754eea74130b7d.bindPopup(popup_5154d80de8a5dbd9214d076adc627cdd)
+        ;
+
+        
+    
+    
+            var circle_776ba7bb0f23d99eb606bdb76ce58c37 = L.circle(
+                [35.167929, 129.036492],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_3817ba9c43788a713a0107282e6ab330 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ead52ba9ee2e45ca919f7a7a7c5f0500 = $(`<div id="html_ead52ba9ee2e45ca919f7a7a7c5f0500" style="width: 100.0%; height: 100.0%;">부산진구 생활문화센터</div>`)[0];
+                popup_3817ba9c43788a713a0107282e6ab330.setContent(html_ead52ba9ee2e45ca919f7a7a7c5f0500);
+            
+        
+
+        circle_776ba7bb0f23d99eb606bdb76ce58c37.bindPopup(popup_3817ba9c43788a713a0107282e6ab330)
+        ;
+
+        
+    
+    
+            var circle_c3a0a5f6d5630a36e3f67f11b99f6a62 = L.circle(
+                [35.243616, 129.019843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_1ed4bf0828766086ae61738756ac6e5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e31adb4d85632cd2dc1086bce26970b = $(`<div id="html_1e31adb4d85632cd2dc1086bce26970b" style="width: 100.0%; height: 100.0%;">화명생활문화센터</div>`)[0];
+                popup_1ed4bf0828766086ae61738756ac6e5e.setContent(html_1e31adb4d85632cd2dc1086bce26970b);
+            
+        
+
+        circle_c3a0a5f6d5630a36e3f67f11b99f6a62.bindPopup(popup_1ed4bf0828766086ae61738756ac6e5e)
+        ;
+
+        
+    
+    
+            var circle_724f705ca6468ffdb24bdbe470340523 = L.circle(
+                [35.25008, 129.012848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2f301cfc9935607c4fa237df290a4fd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba2248b32723252a7f79635b184c2d2a = $(`<div id="html_ba2248b32723252a7f79635b184c2d2a" style="width: 100.0%; height: 100.0%;">금곡생활문화센터</div>`)[0];
+                popup_2f301cfc9935607c4fa237df290a4fd4.setContent(html_ba2248b32723252a7f79635b184c2d2a);
+            
+        
+
+        circle_724f705ca6468ffdb24bdbe470340523.bindPopup(popup_2f301cfc9935607c4fa237df290a4fd4)
+        ;
+
+        
+    
+    
+            var circle_dc50b63222396db014e8f73d6fb1de63 = L.circle(
+                [35.062615, 128.986372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c3792ef9c02437af679a7bcc6e3341a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6065e2caa81babb096be857b80d41bc = $(`<div id="html_d6065e2caa81babb096be857b80d41bc" style="width: 100.0%; height: 100.0%;">두송생활문화센터</div>`)[0];
+                popup_c3792ef9c02437af679a7bcc6e3341a5.setContent(html_d6065e2caa81babb096be857b80d41bc);
+            
+        
+
+        circle_dc50b63222396db014e8f73d6fb1de63.bindPopup(popup_c3792ef9c02437af679a7bcc6e3341a5)
+        ;
+
+        
+    
+    
+            var circle_2d3db421ca38cbfbd51b24313366f43c = L.circle(
+                [35.088411, 129.002836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_a8adbbb3cbb00ae5d420422610f73e28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5759f6da8195f6b1a9749c2a8867f1df = $(`<div id="html_5759f6da8195f6b1a9749c2a8867f1df" style="width: 100.0%; height: 100.0%;">감천생활문화센터</div>`)[0];
+                popup_a8adbbb3cbb00ae5d420422610f73e28.setContent(html_5759f6da8195f6b1a9749c2a8867f1df);
+            
+        
+
+        circle_2d3db421ca38cbfbd51b24313366f43c.bindPopup(popup_a8adbbb3cbb00ae5d420422610f73e28)
+        ;
+
+        
+    
+    
+            var circle_201b210348bdd031d65f5a2adc1b2259 = L.circle(
+                [35.103267, 128.956759],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_b037ae2716ebeb0727ce1444c58fc513 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_085c3e5c5d063a6fc2c5bcd755946de7 = $(`<div id="html_085c3e5c5d063a6fc2c5bcd755946de7" style="width: 100.0%; height: 100.0%;">하단생활문화센터</div>`)[0];
+                popup_b037ae2716ebeb0727ce1444c58fc513.setContent(html_085c3e5c5d063a6fc2c5bcd755946de7);
+            
+        
+
+        circle_201b210348bdd031d65f5a2adc1b2259.bindPopup(popup_b037ae2716ebeb0727ce1444c58fc513)
+        ;
+
+        
+    
+    
+            var circle_ddccec7a0d0a6ff03bc766888765e2df = L.circle(
+                [35.217208, 129.103942],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_20c51bf747319c0d90a07d86ea76b402 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_528c601ef385eae11ad188e1ed8773de = $(`<div id="html_528c601ef385eae11ad188e1ed8773de" style="width: 100.0%; height: 100.0%;">섯골생활문화센터</div>`)[0];
+                popup_20c51bf747319c0d90a07d86ea76b402.setContent(html_528c601ef385eae11ad188e1ed8773de);
+            
+        
+
+        circle_ddccec7a0d0a6ff03bc766888765e2df.bindPopup(popup_20c51bf747319c0d90a07d86ea76b402)
+        ;
+
+        
+    
+    
+            var circle_9a2612f3f1a34df890734bbf2d69b86b = L.circle(
+                [35.237702, 129.08493],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_767a7a841ccd8867c45644aa66ae2a26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee0fb033b2c451a04ab6dae24c0faa4b = $(`<div id="html_ee0fb033b2c451a04ab6dae24c0faa4b" style="width: 100.0%; height: 100.0%;">장전생활문화센터</div>`)[0];
+                popup_767a7a841ccd8867c45644aa66ae2a26.setContent(html_ee0fb033b2c451a04ab6dae24c0faa4b);
+            
+        
+
+        circle_9a2612f3f1a34df890734bbf2d69b86b.bindPopup(popup_767a7a841ccd8867c45644aa66ae2a26)
+        ;
+
+        
+    
+    
+            var circle_3b9ebcf961d46a9bfeac60335d37d88f = L.circle(
+                [35.185769, 129.108783],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_82c9a4830cf687b0cb347c71f269c33e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c499efa52868c38e572e4f116dc35e51 = $(`<div id="html_c499efa52868c38e572e4f116dc35e51" style="width: 100.0%; height: 100.0%;">연제구 생활문화센터</div>`)[0];
+                popup_82c9a4830cf687b0cb347c71f269c33e.setContent(html_c499efa52868c38e572e4f116dc35e51);
+            
+        
+
+        circle_3b9ebcf961d46a9bfeac60335d37d88f.bindPopup(popup_82c9a4830cf687b0cb347c71f269c33e)
+        ;
+
+        
+    
+    
+            var circle_0921ce36e7211cf6c1c2a8c74ac8a6e2 = L.circle(
+                [35.153728, 129.118473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_1004f7ee0c5369d3a61991c3a6a52e86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e5fe81fe1e45b9b949f333d2ddcf5a1 = $(`<div id="html_5e5fe81fe1e45b9b949f333d2ddcf5a1" style="width: 100.0%; height: 100.0%;">수영구 생활문화센터</div>`)[0];
+                popup_1004f7ee0c5369d3a61991c3a6a52e86.setContent(html_5e5fe81fe1e45b9b949f333d2ddcf5a1);
+            
+        
+
+        circle_0921ce36e7211cf6c1c2a8c74ac8a6e2.bindPopup(popup_1004f7ee0c5369d3a61991c3a6a52e86)
+        ;
+
+        
+    
+    
+            var circle_44c371f1f10ec6fefe61ed018f8c307a = L.circle(
+                [35.175325, 129.115259],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_b8d944521056b69e7e5e3bcd3d7e3e02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1206eca4e452f93e9b276cb97792ba07 = $(`<div id="html_1206eca4e452f93e9b276cb97792ba07" style="width: 100.0%; height: 100.0%;">구락 생활문화센터</div>`)[0];
+                popup_b8d944521056b69e7e5e3bcd3d7e3e02.setContent(html_1206eca4e452f93e9b276cb97792ba07);
+            
+        
+
+        circle_44c371f1f10ec6fefe61ed018f8c307a.bindPopup(popup_b8d944521056b69e7e5e3bcd3d7e3e02)
+        ;
+
+        
+    
+    
+            var circle_e28623a6bbfc0d02c7b48ea778ba541f = L.circle(
+                [35.15418, 128.979395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f296cc5cf350b9902783e1875bf52306 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_341ffc7cfd44adeddf00ec4a690bafd5 = $(`<div id="html_341ffc7cfd44adeddf00ec4a690bafd5" style="width: 100.0%; height: 100.0%;">감전생활문화센터</div>`)[0];
+                popup_f296cc5cf350b9902783e1875bf52306.setContent(html_341ffc7cfd44adeddf00ec4a690bafd5);
+            
+        
+
+        circle_e28623a6bbfc0d02c7b48ea778ba541f.bindPopup(popup_f296cc5cf350b9902783e1875bf52306)
+        ;
+
+        
+    
+    
+            var circle_b673148f3d59dc12e572db39b51f93da = L.circle(
+                [35.246412, 129.094562],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_bc884dc5a65291371967e3cc7b532bc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26c87d807a6d681a7c3e6040568143e7 = $(`<div id="html_26c87d807a6d681a7c3e6040568143e7" style="width: 100.0%; height: 100.0%;">금정문화회관</div>`)[0];
+                popup_bc884dc5a65291371967e3cc7b532bc9.setContent(html_26c87d807a6d681a7c3e6040568143e7);
+            
+        
+
+        circle_b673148f3d59dc12e572db39b51f93da.bindPopup(popup_bc884dc5a65291371967e3cc7b532bc9)
+        ;
+
+        
+    
+    
+            var circle_deaed69e14c83d62671290c865a31ebe = L.circle(
+                [35.127202, 129.093463],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_3ee3c51d3bc824bf9c399ea8a2db1139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15d0c73ff51fb4080dc7cb7d20c95674 = $(`<div id="html_15d0c73ff51fb4080dc7cb7d20c95674" style="width: 100.0%; height: 100.0%;">부산문화회관</div>`)[0];
+                popup_3ee3c51d3bc824bf9c399ea8a2db1139.setContent(html_15d0c73ff51fb4080dc7cb7d20c95674);
+            
+        
+
+        circle_deaed69e14c83d62671290c865a31ebe.bindPopup(popup_3ee3c51d3bc824bf9c399ea8a2db1139)
+        ;
+
+        
+    
+    
+            var circle_3ee5c84146c98f833bd1e595bf1c4950 = L.circle(
+                [35.130816, 129.102373],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_bf661aee30792777d31655030b24a6b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74dfbf675c6498eea92193a0a3664224 = $(`<div id="html_74dfbf675c6498eea92193a0a3664224" style="width: 100.0%; height: 100.0%;">부산예술회관</div>`)[0];
+                popup_bf661aee30792777d31655030b24a6b9.setContent(html_74dfbf675c6498eea92193a0a3664224);
+            
+        
+
+        circle_3ee5c84146c98f833bd1e595bf1c4950.bindPopup(popup_bf661aee30792777d31655030b24a6b9)
+        ;
+
+        
+    
+    
+            var circle_96a6b04d56d2c33e03c8372ae90044c8 = L.circle(
+                [35.138915, 129.065329],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_d32317197c4009e8fb57e22966833cc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04a3f943aee11f1dd6b41478b8016328 = $(`<div id="html_04a3f943aee11f1dd6b41478b8016328" style="width: 100.0%; height: 100.0%;">부산시민회관</div>`)[0];
+                popup_d32317197c4009e8fb57e22966833cc3.setContent(html_04a3f943aee11f1dd6b41478b8016328);
+            
+        
+
+        circle_96a6b04d56d2c33e03c8372ae90044c8.bindPopup(popup_d32317197c4009e8fb57e22966833cc3)
+        ;
+
+        
+    
+    
+            var circle_1aebb8e7ba1002cac7d68ab5b4aa0de2 = L.circle(
+                [35.128953, 129.044743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_345d2bac2c3a1faf9562dc3c478aa80d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6337d697de8647404340fa46239ad66b = $(`<div id="html_6337d697de8647404340fa46239ad66b" style="width: 100.0%; height: 100.0%;">동구국민체육문예센터</div>`)[0];
+                popup_345d2bac2c3a1faf9562dc3c478aa80d.setContent(html_6337d697de8647404340fa46239ad66b);
+            
+        
+
+        circle_1aebb8e7ba1002cac7d68ab5b4aa0de2.bindPopup(popup_345d2bac2c3a1faf9562dc3c478aa80d)
+        ;
+
+        
+    
+    
+            var circle_28919e7348b65935c9c3eed0bafdc3b0 = L.circle(
+                [35.211772, 129.089583],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_902a5c5c82171fa829b994ec852ea06d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bfbdd70214c836e4ea9c892516559ff = $(`<div id="html_9bfbdd70214c836e4ea9c892516559ff" style="width: 100.0%; height: 100.0%;">동래문화회관</div>`)[0];
+                popup_902a5c5c82171fa829b994ec852ea06d.setContent(html_9bfbdd70214c836e4ea9c892516559ff);
+            
+        
+
+        circle_28919e7348b65935c9c3eed0bafdc3b0.bindPopup(popup_902a5c5c82171fa829b994ec852ea06d)
+        ;
+
+        
+    
+    
+            var circle_276081b4937a2f1fcc2419335b385914 = L.circle(
+                [35.213399, 129.005706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_25999ef1cd5c16b79096a0bf6e5a5b49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c21a5222d425f9647d290bd53e04733a = $(`<div id="html_c21a5222d425f9647d290bd53e04733a" style="width: 100.0%; height: 100.0%;">북구문화예술회관</div>`)[0];
+                popup_25999ef1cd5c16b79096a0bf6e5a5b49.setContent(html_c21a5222d425f9647d290bd53e04733a);
+            
+        
+
+        circle_276081b4937a2f1fcc2419335b385914.bindPopup(popup_25999ef1cd5c16b79096a0bf6e5a5b49)
+        ;
+
+        
+    
+    
+            var circle_624057dd86232f8a934e45174aebe3bc = L.circle(
+                [35.110081, 128.94487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c51b4e5148106e74e3fbfa56d588f06b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ab8e41f4b10b4abe3ce6d467e7ae865 = $(`<div id="html_0ab8e41f4b10b4abe3ce6d467e7ae865" style="width: 100.0%; height: 100.0%;">을숙도문화회관</div>`)[0];
+                popup_c51b4e5148106e74e3fbfa56d588f06b.setContent(html_0ab8e41f4b10b4abe3ce6d467e7ae865);
+            
+        
+
+        circle_624057dd86232f8a934e45174aebe3bc.bindPopup(popup_c51b4e5148106e74e3fbfa56d588f06b)
+        ;
+
+        
+    
+    
+            var circle_d5678042246a51f408450cbc19d560e1 = L.circle(
+                [35.074708, 129.065294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_9925b4ac5add45721b67c04637c92512 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7502dbd996582d3ed521be18d694870 = $(`<div id="html_a7502dbd996582d3ed521be18d694870" style="width: 100.0%; height: 100.0%;">영도문화예술회관</div>`)[0];
+                popup_9925b4ac5add45721b67c04637c92512.setContent(html_a7502dbd996582d3ed521be18d694870);
+            
+        
+
+        circle_d5678042246a51f408450cbc19d560e1.bindPopup(popup_9925b4ac5add45721b67c04637c92512)
+        ;
+
+        
+    
+    
+            var circle_d53039fb6072b88187e4a87e55d3eba2 = L.circle(
+                [35.109676, 129.028075],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_4bd775821029a679f4fb349910889645 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12ebbddc170f12d90f4b859fd6c17d76 = $(`<div id="html_12ebbddc170f12d90f4b859fd6c17d76" style="width: 100.0%; height: 100.0%;">부산민주공원</div>`)[0];
+                popup_4bd775821029a679f4fb349910889645.setContent(html_12ebbddc170f12d90f4b859fd6c17d76);
+            
+        
+
+        circle_d53039fb6072b88187e4a87e55d3eba2.bindPopup(popup_4bd775821029a679f4fb349910889645)
+        ;
+
+        
+    
+    
+            var circle_a8827a8644ed289737a668ef6d74cb79 = L.circle(
+                [35.17118, 129.173988],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_804a0e86fe8345cab38d2ca9340e979d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68983c084d091f7aee7a53e981ff0ca9 = $(`<div id="html_68983c084d091f7aee7a53e981ff0ca9" style="width: 100.0%; height: 100.0%;">해운대문화회관</div>`)[0];
+                popup_804a0e86fe8345cab38d2ca9340e979d.setContent(html_68983c084d091f7aee7a53e981ff0ca9);
+            
+        
+
+        circle_a8827a8644ed289737a668ef6d74cb79.bindPopup(popup_804a0e86fe8345cab38d2ca9340e979d)
+        ;
+
+        
+    
+    
+            var circle_671f883bc68c2a1db9996cc9bdbff9b7 = L.circle(
+                [35.17098, 129.127155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_98f92626c6555526cd60ae5f1cb3db3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7e1bff4381aa50a45f07559c42700e7 = $(`<div id="html_f7e1bff4381aa50a45f07559c42700e7" style="width: 100.0%; height: 100.0%;">영화의전당</div>`)[0];
+                popup_98f92626c6555526cd60ae5f1cb3db3f.setContent(html_f7e1bff4381aa50a45f07559c42700e7);
+            
+        
+
+        circle_671f883bc68c2a1db9996cc9bdbff9b7.bindPopup(popup_98f92626c6555526cd60ae5f1cb3db3f)
+        ;
+
+        
+    
+    
+            var circle_324585eb73760203b4a81a70888be4e4 = L.circle(
+                [35.103498, 129.033326],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_47298f32b7e45dff1540d1cdbe326ac2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59953afb557447248321b97c6902e0b0 = $(`<div id="html_59953afb557447248321b97c6902e0b0" style="width: 100.0%; height: 100.0%;">중구문화원</div>`)[0];
+                popup_47298f32b7e45dff1540d1cdbe326ac2.setContent(html_59953afb557447248321b97c6902e0b0);
+            
+        
+
+        circle_324585eb73760203b4a81a70888be4e4.bindPopup(popup_47298f32b7e45dff1540d1cdbe326ac2)
+        ;
+
+        
+    
+    
+            var circle_2f44405a65040c9b94ffc3f34e2889c8 = L.circle(
+                [35.102011, 129.017614],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_b79ea79fef82cdeea9bda9014b5c9a18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5294dd122cba6a3dda49a1486a5af468 = $(`<div id="html_5294dd122cba6a3dda49a1486a5af468" style="width: 100.0%; height: 100.0%;">서구문화원</div>`)[0];
+                popup_b79ea79fef82cdeea9bda9014b5c9a18.setContent(html_5294dd122cba6a3dda49a1486a5af468);
+            
+        
+
+        circle_2f44405a65040c9b94ffc3f34e2889c8.bindPopup(popup_b79ea79fef82cdeea9bda9014b5c9a18)
+        ;
+
+        
+    
+    
+            var circle_5b9e77700c21dee9c632b666afe7885c = L.circle(
+                [35.127113, 129.046043],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_e90a07d7fed6950b05114e2e632b9978 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8565e2dfe5c72d5f5c43ff6283b9fa82 = $(`<div id="html_8565e2dfe5c72d5f5c43ff6283b9fa82" style="width: 100.0%; height: 100.0%;">동구문화원</div>`)[0];
+                popup_e90a07d7fed6950b05114e2e632b9978.setContent(html_8565e2dfe5c72d5f5c43ff6283b9fa82);
+            
+        
+
+        circle_5b9e77700c21dee9c632b666afe7885c.bindPopup(popup_e90a07d7fed6950b05114e2e632b9978)
+        ;
+
+        
+    
+    
+            var circle_12b382c582b1f1ea8d169367a6f044c0 = L.circle(
+                [35.075573, 129.066495],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5224f9e7585d4f46f3deee78c6cdae98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_641d305c3a474c5eb78553913b4107d7 = $(`<div id="html_641d305c3a474c5eb78553913b4107d7" style="width: 100.0%; height: 100.0%;">영도문화원</div>`)[0];
+                popup_5224f9e7585d4f46f3deee78c6cdae98.setContent(html_641d305c3a474c5eb78553913b4107d7);
+            
+        
+
+        circle_12b382c582b1f1ea8d169367a6f044c0.bindPopup(popup_5224f9e7585d4f46f3deee78c6cdae98)
+        ;
+
+        
+    
+    
+            var circle_5cfd9f3ccbb0357da6f0ea2f55c3eefd = L.circle(
+                [35.164352, 129.051772],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5180871f7c56e170bdfde0a807c966e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9df3fd24af5585d1b6f417590a68c74 = $(`<div id="html_d9df3fd24af5585d1b6f417590a68c74" style="width: 100.0%; height: 100.0%;">부산진문화원</div>`)[0];
+                popup_5180871f7c56e170bdfde0a807c966e0.setContent(html_d9df3fd24af5585d1b6f417590a68c74);
+            
+        
+
+        circle_5cfd9f3ccbb0357da6f0ea2f55c3eefd.bindPopup(popup_5180871f7c56e170bdfde0a807c966e0)
+        ;
+
+        
+    
+    
+            var circle_48985eecb8a95fb70483650d69dc555b = L.circle(
+                [35.211772, 129.089583],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_df761d247b15650b8f87a1df9be1346a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6c947944c97521645a5d73ad1916abd = $(`<div id="html_c6c947944c97521645a5d73ad1916abd" style="width: 100.0%; height: 100.0%;">동래문화원</div>`)[0];
+                popup_df761d247b15650b8f87a1df9be1346a.setContent(html_c6c947944c97521645a5d73ad1916abd);
+            
+        
+
+        circle_48985eecb8a95fb70483650d69dc555b.bindPopup(popup_df761d247b15650b8f87a1df9be1346a)
+        ;
+
+        
+    
+    
+            var circle_0433e4cc625f19d4e98c999ba3a34a86 = L.circle(
+                [35.130475, 129.112069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5a00e94cf6ac49fcecc819796bebe6f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c388cae9f708d93f0f499442f4ce5304 = $(`<div id="html_c388cae9f708d93f0f499442f4ce5304" style="width: 100.0%; height: 100.0%;">남구문화원</div>`)[0];
+                popup_5a00e94cf6ac49fcecc819796bebe6f1.setContent(html_c388cae9f708d93f0f499442f4ce5304);
+            
+        
+
+        circle_0433e4cc625f19d4e98c999ba3a34a86.bindPopup(popup_5a00e94cf6ac49fcecc819796bebe6f1)
+        ;
+
+        
+    
+    
+            var circle_f23d59b994de68605e820ae0ba0c423c = L.circle(
+                [35.213399, 129.005706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_affdd2854bcccf11ae53b5667b7ad4f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aca62cd9edbbf7865928ce3878ede1d9 = $(`<div id="html_aca62cd9edbbf7865928ce3878ede1d9" style="width: 100.0%; height: 100.0%;">낙동문화원</div>`)[0];
+                popup_affdd2854bcccf11ae53b5667b7ad4f3.setContent(html_aca62cd9edbbf7865928ce3878ede1d9);
+            
+        
+
+        circle_f23d59b994de68605e820ae0ba0c423c.bindPopup(popup_affdd2854bcccf11ae53b5667b7ad4f3)
+        ;
+
+        
+    
+    
+            var circle_25759440b84a1f6ded5e48b5db019a8e = L.circle(
+                [35.182064, 129.121645],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_21856799506d3a94c507f23f74ed1c22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf2808fb695b9b3e20b61dad1bb8c4af = $(`<div id="html_cf2808fb695b9b3e20b61dad1bb8c4af" style="width: 100.0%; height: 100.0%;">해운대문화원</div>`)[0];
+                popup_21856799506d3a94c507f23f74ed1c22.setContent(html_cf2808fb695b9b3e20b61dad1bb8c4af);
+            
+        
+
+        circle_25759440b84a1f6ded5e48b5db019a8e.bindPopup(popup_21856799506d3a94c507f23f74ed1c22)
+        ;
+
+        
+    
+    
+            var circle_a54878d3ae7fff84c00fa1ec3b2464be = L.circle(
+                [35.110081, 128.94487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c847dcc12087331c5a1896294a199006 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73a3f9de3e5d1e2233058cdb8b5443ce = $(`<div id="html_73a3f9de3e5d1e2233058cdb8b5443ce" style="width: 100.0%; height: 100.0%;">사하문화원</div>`)[0];
+                popup_c847dcc12087331c5a1896294a199006.setContent(html_73a3f9de3e5d1e2233058cdb8b5443ce);
+            
+        
+
+        circle_a54878d3ae7fff84c00fa1ec3b2464be.bindPopup(popup_c847dcc12087331c5a1896294a199006)
+        ;
+
+        
+    
+    
+            var circle_c57553ad78d9a24e8f0f10b1f65fe1d5 = L.circle(
+                [35.247294, 129.09319],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f2cecd60955ac2fde96c792c33e83d66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7902c8497a5d5ef5dc05da595552f347 = $(`<div id="html_7902c8497a5d5ef5dc05da595552f347" style="width: 100.0%; height: 100.0%;">금정문화원</div>`)[0];
+                popup_f2cecd60955ac2fde96c792c33e83d66.setContent(html_7902c8497a5d5ef5dc05da595552f347);
+            
+        
+
+        circle_c57553ad78d9a24e8f0f10b1f65fe1d5.bindPopup(popup_f2cecd60955ac2fde96c792c33e83d66)
+        ;
+
+        
+    
+    
+            var circle_f390377d0b3d7f40aec0168e111cf094 = L.circle(
+                [35.212231, 128.980584],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_16a3b3c4e2e23d3b64eca3b2c3dc8fe1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc2beef4947a11141b116edc554d86cd = $(`<div id="html_bc2beef4947a11141b116edc554d86cd" style="width: 100.0%; height: 100.0%;">강서문화원</div>`)[0];
+                popup_16a3b3c4e2e23d3b64eca3b2c3dc8fe1.setContent(html_bc2beef4947a11141b116edc554d86cd);
+            
+        
+
+        circle_f390377d0b3d7f40aec0168e111cf094.bindPopup(popup_16a3b3c4e2e23d3b64eca3b2c3dc8fe1)
+        ;
+
+        
+    
+    
+            var circle_6bdf0608e332bf4df8cf9a09c58b6d59 = L.circle(
+                [35.184287, 129.071201],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_6f44976bb08bf48680e7d75f537dbebb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63facd0c8ef43214dba04dedf27e8d11 = $(`<div id="html_63facd0c8ef43214dba04dedf27e8d11" style="width: 100.0%; height: 100.0%;">연제문화원</div>`)[0];
+                popup_6f44976bb08bf48680e7d75f537dbebb.setContent(html_63facd0c8ef43214dba04dedf27e8d11);
+            
+        
+
+        circle_6bdf0608e332bf4df8cf9a09c58b6d59.bindPopup(popup_6f44976bb08bf48680e7d75f537dbebb)
+        ;
+
+        
+    
+    
+            var circle_91247e6e87844f7975e283ad8b093d8f = L.circle(
+                [35.153728, 129.118473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_6ab17b317499875bd186aee5e0b7218b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbf997ff9b7b73539aaaf8f5adb1d6ff = $(`<div id="html_cbf997ff9b7b73539aaaf8f5adb1d6ff" style="width: 100.0%; height: 100.0%;">수영문화원</div>`)[0];
+                popup_6ab17b317499875bd186aee5e0b7218b.setContent(html_cbf997ff9b7b73539aaaf8f5adb1d6ff);
+            
+        
+
+        circle_91247e6e87844f7975e283ad8b093d8f.bindPopup(popup_6ab17b317499875bd186aee5e0b7218b)
+        ;
+
+        
+    
+    
+            var circle_7d49a4f158345689bf09c3505371dfbe = L.circle(
+                [35.147381, 128.995021],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_f6b4cc1aa5d09586edf727573466eb15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_836f5ba2bd78fb37200e9a2bc9322d8b = $(`<div id="html_836f5ba2bd78fb37200e9a2bc9322d8b" style="width: 100.0%; height: 100.0%;">사상문화원</div>`)[0];
+                popup_f6b4cc1aa5d09586edf727573466eb15.setContent(html_836f5ba2bd78fb37200e9a2bc9322d8b);
+            
+        
+
+        circle_7d49a4f158345689bf09c3505371dfbe.bindPopup(popup_f6b4cc1aa5d09586edf727573466eb15)
+        ;
+
+        
+    
+    
+            var circle_a8e38b7ae897b9f5678a640d78fa19fa = L.circle(
+                [35.235243, 129.221738],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_0a4155099bd74644c601fda0dd6b467e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fde2893e9e342fff49a41db4e8c7e856 = $(`<div id="html_fde2893e9e342fff49a41db4e8c7e856" style="width: 100.0%; height: 100.0%;">기장문화원</div>`)[0];
+                popup_0a4155099bd74644c601fda0dd6b467e.setContent(html_fde2893e9e342fff49a41db4e8c7e856);
+            
+        
+
+        circle_a8e38b7ae897b9f5678a640d78fa19fa.bindPopup(popup_0a4155099bd74644c601fda0dd6b467e)
+        ;
+
+        
+    
+    
+            var circle_e0408ce801736706f1701529fc9c88fb = L.circle(
+                [35.215295, 129.076619],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_c669a97c84e196c8ee37e0ed744747a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93cbf310965cf37bcd01bdce1dd5e542 = $(`<div id="html_93cbf310965cf37bcd01bdce1dd5e542" style="width: 100.0%; height: 100.0%;">이주홍문학관</div>`)[0];
+                popup_c669a97c84e196c8ee37e0ed744747a7.setContent(html_93cbf310965cf37bcd01bdce1dd5e542);
+            
+        
+
+        circle_e0408ce801736706f1701529fc9c88fb.bindPopup(popup_c669a97c84e196c8ee37e0ed744747a7)
+        ;
+
+        
+    
+    
+            var circle_eb503cf5e6802f1f7e87b1f158eca6af = L.circle(
+                [35.272359, 129.085683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ca6e5328e327a05b06efc6af59f5936d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_752756b0985059176090342237144e27 = $(`<div id="html_752756b0985059176090342237144e27" style="width: 100.0%; height: 100.0%;">요산김정한문학관</div>`)[0];
+                popup_ca6e5328e327a05b06efc6af59f5936d.setContent(html_752756b0985059176090342237144e27);
+            
+        
+
+        circle_eb503cf5e6802f1f7e87b1f158eca6af.bindPopup(popup_ca6e5328e327a05b06efc6af59f5936d)
+        ;
+
+        
+    
+    
+            var circle_b3789c18a25943a723265752105f0ab5 = L.circle(
+                [35.161688, 129.183309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_5ed57e04937874695ab6ae3b0bc32f78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bba124c5076a41877fb3b18637fe95a = $(`<div id="html_3bba124c5076a41877fb3b18637fe95a" style="width: 100.0%; height: 100.0%;">추리문학관</div>`)[0];
+                popup_5ed57e04937874695ab6ae3b0bc32f78.setContent(html_3bba124c5076a41877fb3b18637fe95a);
+            
+        
+
+        circle_b3789c18a25943a723265752105f0ab5.bindPopup(popup_5ed57e04937874695ab6ae3b0bc32f78)
+        ;
+
+        
+    
+    
+            var circle_280f6a4aaf0956e6a56b44f3547aa91c = L.circle(
+                [35.105741, 129.022633],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ac4c0d558d028933fdfdd83e45be0fc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1aec9b981c284a52866cc89039c75f23 = $(`<div id="html_1aec9b981c284a52866cc89039c75f23" style="width: 100.0%; height: 100.0%;">중구 청소년문화의집</div>`)[0];
+                popup_ac4c0d558d028933fdfdd83e45be0fc3.setContent(html_1aec9b981c284a52866cc89039c75f23);
+            
+        
+
+        circle_280f6a4aaf0956e6a56b44f3547aa91c.bindPopup(popup_ac4c0d558d028933fdfdd83e45be0fc3)
+        ;
+
+        
+    
+    
+            var circle_5f1de91598f550b0edf570af9d7b5a37 = L.circle(
+                [35.049514, 128.963327],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ade269037773621fca9d50e57e86f017 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e97e6c61b282581330583b021cdc2b32 = $(`<div id="html_e97e6c61b282581330583b021cdc2b32" style="width: 100.0%; height: 100.0%;">사하구 청소년문화의집</div>`)[0];
+                popup_ade269037773621fca9d50e57e86f017.setContent(html_e97e6c61b282581330583b021cdc2b32);
+            
+        
+
+        circle_5f1de91598f550b0edf570af9d7b5a37.bindPopup(popup_ade269037773621fca9d50e57e86f017)
+        ;
+
+        
+    
+    
+            var circle_c3d0d5b0cd0b65e38be26067bbce298f = L.circle(
+                [35.210179, 129.037206],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_0e9d227500971ff983372f475d92fae5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97c0f38c4f0841ce0660339f6306f176 = $(`<div id="html_97c0f38c4f0841ce0660339f6306f176" style="width: 100.0%; height: 100.0%;">북구 청소년문화의집</div>`)[0];
+                popup_0e9d227500971ff983372f475d92fae5.setContent(html_97c0f38c4f0841ce0660339f6306f176);
+            
+        
+
+        circle_c3d0d5b0cd0b65e38be26067bbce298f.bindPopup(popup_0e9d227500971ff983372f475d92fae5)
+        ;
+
+        
+    
+    
+            var circle_aa97b4a853206f1f9f72cfbd298db062 = L.circle(
+                [35.084497, 129.020558],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_08e0c10f42b4a18ea4e3dc0028c507d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c6a829faba9ebe4af3fefa8d402bdb3 = $(`<div id="html_3c6a829faba9ebe4af3fefa8d402bdb3" style="width: 100.0%; height: 100.0%;">서구 청소년문화의집</div>`)[0];
+                popup_08e0c10f42b4a18ea4e3dc0028c507d5.setContent(html_3c6a829faba9ebe4af3fefa8d402bdb3);
+            
+        
+
+        circle_aa97b4a853206f1f9f72cfbd298db062.bindPopup(popup_08e0c10f42b4a18ea4e3dc0028c507d5)
+        ;
+
+        
+    
+    
+            var circle_500ce63f64009e13367bd9c6e8680661 = L.circle(
+                [35.222962, 129.152825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_177cdc27ec9ff754922ac6143adf594e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_662128a97b40e70c1d924954ea290a87 = $(`<div id="html_662128a97b40e70c1d924954ea290a87" style="width: 100.0%; height: 100.0%;">해운대 청소년문화의집</div>`)[0];
+                popup_177cdc27ec9ff754922ac6143adf594e.setContent(html_662128a97b40e70c1d924954ea290a87);
+            
+        
+
+        circle_500ce63f64009e13367bd9c6e8680661.bindPopup(popup_177cdc27ec9ff754922ac6143adf594e)
+        ;
+
+        
+    
+    
+            var circle_e1db6f66f90f58d1b4f011ba91152ba9 = L.circle(
+                [35.163535, 129.063024],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_0728da993202f780ea940a8635163160 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3503671a7c15c02ff508c7e0a8e772ec = $(`<div id="html_3503671a7c15c02ff508c7e0a8e772ec" style="width: 100.0%; height: 100.0%;">부산진구 부전청소년센터</div>`)[0];
+                popup_0728da993202f780ea940a8635163160.setContent(html_3503671a7c15c02ff508c7e0a8e772ec);
+            
+        
+
+        circle_e1db6f66f90f58d1b4f011ba91152ba9.bindPopup(popup_0728da993202f780ea940a8635163160)
+        ;
+
+        
+    
+    
+            var circle_f3799c474a36f27ec2b5e3617dc574af = L.circle(
+                [35.155418, 129.074567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_168f127d272a88e636639a91430b90e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c6ff5d62d677b78a5ef99d8fd24db1f = $(`<div id="html_9c6ff5d62d677b78a5ef99d8fd24db1f" style="width: 100.0%; height: 100.0%;">부산진구 전포청소년센터</div>`)[0];
+                popup_168f127d272a88e636639a91430b90e2.setContent(html_9c6ff5d62d677b78a5ef99d8fd24db1f);
+            
+        
+
+        circle_f3799c474a36f27ec2b5e3617dc574af.bindPopup(popup_168f127d272a88e636639a91430b90e2)
+        ;
+
+        
+    
+    
+            var circle_fc87115493a529d748c793d217135b94 = L.circle(
+                [35.157367, 129.057308],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_2b455d3bcb30962489528b00cb94b8f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a06f5535dfa00de6415297d8bb29fb1c = $(`<div id="html_a06f5535dfa00de6415297d8bb29fb1c" style="width: 100.0%; height: 100.0%;">부산진구 가야청소년센터</div>`)[0];
+                popup_2b455d3bcb30962489528b00cb94b8f3.setContent(html_a06f5535dfa00de6415297d8bb29fb1c);
+            
+        
+
+        circle_fc87115493a529d748c793d217135b94.bindPopup(popup_2b455d3bcb30962489528b00cb94b8f3)
+        ;
+
+        
+    
+    
+            var circle_44feb56eea1d9fd4aa300de65b841f9b = L.circle(
+                [35.152938, 129.107459],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_8949f4534f459ae73ee9346528682770 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fde8ba529012f5de4757f443007723c3 = $(`<div id="html_fde8ba529012f5de4757f443007723c3" style="width: 100.0%; height: 100.0%;">수영구 청소년문화의집</div>`)[0];
+                popup_8949f4534f459ae73ee9346528682770.setContent(html_fde8ba529012f5de4757f443007723c3);
+            
+        
+
+        circle_44feb56eea1d9fd4aa300de65b841f9b.bindPopup(popup_8949f4534f459ae73ee9346528682770)
+        ;
+
+        
+    
+    
+            var circle_e2d43e6467d1db040da6dbe61d776e7e = L.circle(
+                [35.255222, 129.215527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_c27cd6eb737c3820afcd9b15fb2a3b1f);
+        
+    
+        var popup_ccd89ce9181a0d8ee26117b68d9912ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_904d3a6ff8eb32b151439fd4f07a8d94 = $(`<div id="html_904d3a6ff8eb32b151439fd4f07a8d94" style="width: 100.0%; height: 100.0%;">기장 청소년센터</div>`)[0];
+                popup_ccd89ce9181a0d8ee26117b68d9912ba.setContent(html_904d3a6ff8eb32b151439fd4f07a8d94);
+            
+        
+
+        circle_e2d43e6467d1db040da6dbe61d776e7e.bindPopup(popup_ccd89ce9181a0d8ee26117b68d9912ba)
+        ;
+
+        
+    
+</script>
+</html>
